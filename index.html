@@ -103,7 +103,7 @@
 	<img class="og-fig-md mt-2 mb-2 d-dark" src="images/yze-white.webp" alt="Year Zero Engine">
 	<span class="og-subtitle">Standard Reference Document</span>
 </h1>
-<p class="small text-center">version 0.10a (2025-08-20)</p>
+<p class="small text-center">version 0.10b (2025-08-21)</p>
 <ul class="list-inline text-center">
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://freeleaguepublishing.com/">Free League Publishing Official</a></li>
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://github.com/callmepartario/og-yzesrd">Github</a></li>
@@ -118,10 +118,10 @@
 		<p class="og-ref">Page 2</p>
 		<p>Welcome to Year Zero. This document contains the core Year Zero Engine mechanics for tabletop roleplaying, used in several <a href="https://freeleaguepublishing.com/">Free League</a> games. This section introduces some key concepts in roleplaying, and how they are used in games using the Year Zero Engine.</p>
 		<dl>
-			<dt>About this Document</dr>
+			<dt>About this Document</dt>
 			<dd>The <a href="https://freeleaguepublishing.com/community-content/free-tabletop-licenses/">Year Zero Engine Standard Reference Document v1.0</a> was authored by Tomas Härenstam, Copyright &copy; 2023 Fria Ligan AB.</dd>
 			<dt>OG-YZESRD</dt>
-			<p>Old Gus' Year Zero Engine Standard Reference Document (OG-YZESRD) is an independent production and is not affiliated with, endorsed by, or sponsored by <a href="https://freeleaguepublishing.com/">Free League Publishing</a>, and is published under the <a href="https://freeleaguepublishing.com/community-content/free-tabletop-licenses/">Year Zero Engine Free Tabletop License</a>.</dd>
+			<dd>Old Gus' Year Zero Engine Standard Reference Document (OG-YZESRD) is an independent production and is not affiliated with, endorsed by, or sponsored by <a href="https://freeleaguepublishing.com/">Free League Publishing</a>, and is published under the <a href="https://freeleaguepublishing.com/community-content/free-tabletop-licenses/">Year Zero Engine Free Tabletop License</a>.</dd>
 			<dt>Editorial Mission</dt>
 			<dd>This document has been lightly edited in service of the following:
 				<ul class="og-list-diamond">
@@ -436,7 +436,7 @@
 	<p>Your <a href="#define-attribute">attributes</a> determine how much <a href="#define-damage">damage and stress</a> you can take before being <a href="#define-broken">broken</a> and thus taken out of action. In some YZE games, this is measured by your Health and Resolve scores.</p>
 	<div class="table-responsive">
 		<table class="table table-light table-striped table-sm mb-3">
-			<caption class="visually-hidden">Dice Pool Skills</caption>
+			<caption class="visually-hidden">Health and Resolve</caption>
 			<thead>
 				<tr>
 					<th scope="col">Version</th>
@@ -511,11 +511,11 @@
 			</ul>
 		</div>
 	</div>
-	<div class="alert">
-		<h5 class="h6" id="other-skills">Other Skills<a class="og-h-anchor" href="#other-skills" title="Permalink" aria-hidden="true"></a></h5>
-		<p class="og-ref">Page 8</p>
-		<p>Individual YZE games may have other skills than the ones listed here, and even more skills than twelve. We don't recommend more than 16 skills however. Skills should be fairly broad&mdash;fine-tuning of characters is done with <a href="#define-specialty">specialties</a>.</p>
-	</div>
+</div>
+<div class="alert">
+	<h5 class="h6" id="other-skills">Other Skills<a class="og-h-anchor" href="#other-skills" title="Permalink" aria-hidden="true"></a></h5>
+	<p class="og-ref">Page 8</p>
+	<p>Individual YZE games may have other skills than the ones listed here, and even more skills than twelve. We don't recommend more than 16 skills however. Skills should be fairly broad&mdash;fine-tuning of characters is done with <a href="#define-specialty">specialties</a>.</p>
 </div>
 <div class="row">
 	<div class="col-12 col-md-6">
@@ -739,7 +739,7 @@
 				<h4 class="h6" id="tiered-specialties">Tiered Specialties<a class="og-h-anchor" href="#tiered-specialties" title="Permalink" aria-hidden="true"></a></h4>
 				<p class="og-ref">Page 13</p>
 				<p>In most YZE games, specialties are not rated&mdash;you either have them or you don't. Some games, however, have specialties tiered in ranks&mdash;usually three. Each rank gives you additional bonuses or effects. Tiered specialties give the game more complexity and "crunch." Low-crunch games don't even need specialties at all.</p>
-			</p>
+			</div>
 			<p class="og-ref">Page 14</p>
 			<h4 class="h6" id="willpower-specialties">Willpower Specialties<a class="og-h-anchor" href="#willpower-specialties" title="Permalink" aria-hidden="true"></a></h4>
 			<p>Some Year Zero Engine games include specialties that require <a href="#define-spell-casting">Willpower Points</a> to use. Such specialties are typically reserved for specific <a href="#define-archetype">archetypes</a> or character classes.</p>
@@ -1281,13 +1281,13 @@
 	<p>Sometimes, rolling a success isn't enough to succeed with your <a href="#define-skill-roll">skill roll</a>. In some cases, you must beat your opponent in an opposed roll. To win an opposed roll, you must roll more successes than your adversary. Every success rolled by your adversary eliminates one of your successes. Only you (the active party) can <a href="#define-push">push your roll</a>&mdash;and you can decide to do so even after your opponent rolls.</p>
 	<p>Sometimes you and your adversary roll for different <a href="#define-skill">skills</a>, sometimes the same. Opposed can be used when you roll <a href="#define-persuasion">Persuasion</a> versus <a href="#define-insight">Insight</a> to influence someone who is actively trying to resist you, or <a href="#define-stealth">Stealth</a> versus <a href="#define-observation">Observation</a> to move undetected past a vigilant guard.</p>
 	<p>The GM can also use opposed rolls in any case when they deem it appropriate.</p>
+	<dl>
+		<dt>Ties</dt>
+		<dd>If you and your opponent roll the same number of successes, the result is a tie. Typically, your action will fail if you roll a tie as the active party in an opposed roll, but in some cases, ties have specific effects. If a tie needs to be broken, reroll the opposed roll to determine the outcome.</dd>
+		<dt>NPCs and Skills</dt>
+		<dd>Non-Player Characters use <a href="#define-skill">skills</a> in the same way as player characters. The GM rolls dice for them, and they can <a href="#define-push">push their rolls</a> just like PCs can. But the GM only has to roll for actions that affect a PC directly&mdash;for example, if the NPC is attacking a player character or is attempting to save them. When an NPC performs an action that does not directly affect a PC, the GM can simply decide what happens, without rolling dice.</dd>
+	</dl>
 </div>
-<dl>
-	<dt>Ties</dt>
-	<dd>If you and your opponent roll the same number of successes, the result is a tie. Typically, your action will fail if you roll a tie as the active party in an opposed roll, but in some cases, ties have specific effects. If a tie needs to be broken, reroll the opposed roll to determine the outcome.</dd>
-	<dt>NPCs and Skills</dt>
-	<dd>Non-Player Characters use <a href="#define-skill">skills</a> in the same way as player characters. The GM rolls dice for them, and they can <a href="#define-push">push their rolls</a> just like PCs can. But the GM only has to roll for actions that affect a PC directly&mdash;for example, if the NPC is attacking a player character or is attempting to save them. When an NPC performs an action that does not directly affect a PC, the GM can simply decide what happens, without rolling dice.</dd>
-</dl>
 <hr>
 
 <h2 class="og-border" id="chapter-4"><span class="og-chapter">4</span> Combat</h2>
@@ -1309,7 +1309,7 @@
 			<h4 id="maps-and-zones">Maps &amp; Zones<a class="og-h-anchor" href="#maps-and-zones" title="Permalink" aria-hidden="true"></a></h4>
 			<p class="og-ref">Page 15</p>
 			<p>A violent conflict is typically played out using a map of the location where your characters happen to find themselves fighting for their lives.</p>
-			<p>The map is divided into zones. A zone is typically a room, a corridor, or an area of ground. How big a zone is varies&mdash;from a few steps across up to about 25 meters. A zone is generally smaller in a <a href="#define-zone-feature">Cramped</a> environment than in open <a href="#define-terrain">terrain</a>.</p>
+			<p>The map is divided into zones. A zone is typically a room, a corridor, or an area of ground. How big a zone is varies&mdash;from a few steps across up to about 25 meters. A zone is generally smaller in a <a href="#define-zone-feature">Cramped</a> environment than in open <a href="#define-travel">terrain</a>.</p>
 			<p>In pre-made scenario material, zones are usually indicated on a location map. In random encounters created on the fly, the GM can make a quick sketch of the area or simply describe it.</p>
 		</div>
 		<div id="define-zone-feature">
@@ -1635,7 +1635,7 @@
 			</ul>
 			<dl>
 				<dt>Grappling</dt>
-				<dd>If you successfully grapple your opponent, both you and your opponent fall to the ground. The opponent drops any weapon they were holding, and cannot move. The only action they can perform is an attempt to break free&mdash;which is a <a href="#define-action">slow action</a> that succeeds if the opponent wins an opposed <a href="#define-melee">Melee</a> roll against you.</dt>
+				<dd>If you successfully grapple your opponent, both you and your opponent fall to the ground. The opponent drops any weapon they were holding, and cannot move. The only action they can perform is an attempt to break free&mdash;which is a <a href="#define-action">slow action</a> that succeeds if the opponent wins an opposed <a href="#define-melee">Melee</a> roll against you.</dd>
 				<dt>Grappling Attack</dt>
 				<dd>While you are grappling, the only action you can perform (apart from releasing your opponent) is a grapple attack. This works as a normal unarmed attack, but is a <a href="#define-action">fast action</a> and cannot be blocked.</dd>
 				<dt>Diving Blow</dt>
@@ -2829,7 +2829,7 @@
 				<dt>Armor</dt>
 				<dd>The <a href="#define-armor">armor rating</a> of the vehicle.</dd>
 				<dt>Travel Speed</dt>
-				<dd>Indicates the <a href="#define-terrain">speed</a> of the vehicle on-road/offroad per <a href="#define-time">shift</a> of <a href="#define-drive">driving</a>.</dd>
+				<dd>Indicates the <a href="#define-travel">speed</a> of the vehicle on-road/offroad per <a href="#define-time">shift</a> of <a href="#define-drive">driving</a>.</dd>
 			</dl>
 		</div>
 	</div>
@@ -3449,7 +3449,7 @@
 				</td>
 				<td>
 					<ul class="og-list-diamond mb-0">
-						<li><a href="#define-bind-magic">Bind Magic</a>&dagger;</em></li>
+						<li><a href="#define-bind-magic">Bind Magic</a>&dagger;</li>
 						<li><a href="#define-transfer">Transfer</a></li>
 					</ul>
 				</td>
@@ -3488,7 +3488,7 @@
 				</td>
 				<td>
 					<ul class="og-list-diamond mb-0">
-						<li><a href="#define-divination">Divination</a>&dagger;</em></li>
+						<li><a href="#define-divination">Divination</a>&dagger;</li>
 						<li><a href="#define-intuition">Intuition</a></li>
 						<li><a href="#define-telepathy">Telepathy</a></li>
 					</ul>
@@ -3575,8 +3575,8 @@
 				<td>
 					<ul class="og-list-diamond mb-0">
 						<li><a href="#define-blood-channeling">Blood Channeling</a></li>
-						<li><a href="#define-blood-curse">Blood Curse</a>&dagger;</em></li>
-						<li><a href="#define-bind-soul">Bind Soul</a>&dagger;</em></li>
+						<li><a href="#define-blood-curse">Blood Curse</a>&dagger;</li>
+						<li><a href="#define-bind-soul">Bind Soul</a>&dagger;</li>
 					</ul>
 				</td>
 			</tr>
@@ -3593,13 +3593,13 @@
 				<td>
 					<ul class="og-list-diamond mb-0">
 						<li><a href="#define-hand-of-doom">Hand of Doom</a></li>
-						<li><a href="#define-raise-the-dead">Raise the Dead</a>&dagger;</em></li>
+						<li><a href="#define-raise-the-dead">Raise the Dead</a>&dagger;</li>
 						<li><a href="#define-speak-to-the-dead">Speak to the Dead</a></li>
 					</ul>
 				</td>
 				<td>
 					<ul class="og-list-diamond mb-0">
-						<li><a href="#define-steal-life">Steal Life</a>&dagger;</em></li>
+						<li><a href="#define-steal-life">Steal Life</a>&dagger;</li>
 						<li><a href="#define-terror">Terror</a></li>
 					</ul>
 				</td>
@@ -3650,8 +3650,8 @@
 				<td>
 					<ul class="og-list-diamond mb-0">
 						<li><a href="#define-puppeteer">Puppeteer</a></li>
-						<li><a href="#define-power-rune">Power Rune</a>&dagger;</em></li>
-						<li><a href="#define-portal">Portal</a>&dagger;</em></li>
+						<li><a href="#define-power-rune">Power Rune</a>&dagger;</li>
+						<li><a href="#define-portal">Portal</a>&dagger;</li>
 					</ul>
 				</td>
 			</tr>
@@ -4468,30 +4468,21 @@
 <hr>
 
 <h2 class="og-border" id="chapter-6"><span class="og-chapter">6</span> Travel</h2>
-<div class="row">
-	<div class="col-12 col-md-6">
-		<div id="define-travel">
-			<h3 id="travel-maps">Travel Maps<a class="og-h-anchor" href="#travel-maps" title="Permalink" aria-hidden="true"></a></h3>
-			<p class="og-ref">Page 41</p>
-			<p>In many YZE games, the world is a dangerous place and safe havens are few and far between. To survive, you need to keep moving. Traveling, whether on foot or by <a href="#define-vehicle">vehicle</a>, can be a key part of your game.</p>
-			<p>To regulate journeys, a travel map is used. A travel map is typically divided into hexagons, which are used to measure distances and govern <a href="#define-move">movement</a>. One hexagon is 10 kilometers across. Some YZE games use travel maps with square grids instead of hexagons.</p>
-		</div>
-	</div>
-	<div class="col-12 col-md-6">
-		<div id="define-terrain">
-			<h4 id="terrain-types">Terrain Types<a class="og-h-anchor" href="#terrain-types" title="Permalink" aria-hidden="true"></a></h4>
-			<p class="og-ref">Page 41</p>
-			<p>A travel map is divided into different terrain types. A few typical terrain types are summarized in the <a href="#define-terrain-example">terrain examples</a> table, but you may want to invent others specific to your game setting. The terrain types affect travel speed as well as the difficulty of driving, foraging, and hunting.</p>
-			<dl>
-				<dt>Roads</dt>
-				<dd>Several major roads are marked on the travel map. Traveling along a major road is generally faster&mdash;but you also increase the risk of encounters. Only main roads count as roads for game purposes, even if the countryside is crisscrossed with tracks or even small dirt roads.</dd>
-				<dt>Rivers</dt>
-				<dd>Rivers are also not a type of terrain in themselves, but can be used for traveling. Fords and bridges can be used to pass over a river. If there are none, you need a raft or boat to cross a river, or you must swim across it.</dd>
-				<dt>Speed</dt>
-				<dd>Listed speeds are for off-road driving. For marching and on-road driving, the speed factor is always &times;1. Traveling at the listed speed on a lake/river requires a boat or amphibious <a href="#define-vehicle">vehicle</a>.</dd>
-			</dl>
-		</div>
-	</div>
+<div id="define-travel">
+	<h3 id="travel-maps">Travel Maps<a class="og-h-anchor" href="#travel-maps" title="Permalink" aria-hidden="true"></a></h3>
+	<p class="og-ref">Page 41</p>
+	<p>In many YZE games, the world is a dangerous place and safe havens are few and far between. To survive, you need to keep moving. Traveling, whether on foot or by <a href="#define-vehicle">vehicle</a>, can be a key part of your game.</p>
+	<p>To regulate journeys, a travel map is used. A travel map is typically divided into hexagons, which are used to measure distances and govern <a href="#define-move">movement</a>. One hexagon is 10 kilometers across. Some YZE games use travel maps with square grids instead of hexagons.</p>
+	<dl>
+		<dt>Terrain Types</dt>
+		<dd>A travel map is divided into different terrain types. A few typical terrain types are summarized in the <a href="#define-terrain-examples">terrain examples</a> table, but you may want to invent others specific to your game setting. The terrain types affect travel speed as well as the difficulty of driving, foraging, and hunting.</dd>
+		<dt>Roads</dt>
+		<dd>Several major roads are marked on the travel map. Traveling along a major road is generally faster&mdash;but you also increase the risk of encounters. Only main roads count as roads for game purposes, even if the countryside is crisscrossed with tracks or even small dirt roads.</dd>
+		<dt>Rivers</dt>
+		<dd>Rivers are also not a type of terrain in themselves, but can be used for traveling. Fords and bridges can be used to pass over a river. If there are none, you need a raft or boat to cross a river, or you must swim across it.</dd>
+		<dt>Speed</dt>
+		<dd>Listed speeds are for off-road driving. For marching and on-road driving, the speed factor is always &times;1. Traveling at the listed speed on a lake/river requires a boat or amphibious <a href="#define-vehicle">vehicle</a>.</dd>
+	</dl>
 </div>
 <div id="define-terrain-examples">
 	<h5 id="terrain-example">Terrain Examples<a class="og-h-anchor" href="#terrain-examples" title="Permalink" aria-hidden="true"></a></h5>
@@ -4712,7 +4703,7 @@
 		<div id="define-march">
 			<h5 id="marching">Marching<a class="og-h-anchor" href="#marching" title="Permalink" aria-hidden="true"></a></h5>
 			<p class="og-ref">Page 42</p>
-			<p>Under good circumstances, you can march two hexes per <a href="#define-time">shift</a> on a road or in open <a href="#define-terrain">terrain</a>. Off-road in any terrain type except open, you can march one hex per shift.</p>
+			<p>Under good circumstances, you can march two hexes per <a href="#define-time">shift</a> on a road or in open <a href="#define-travel">terrain</a>. Off-road in any terrain type except open, you can march one hex per shift.</p>
 			<dl>
 				<dt>Weather</dt>
 				<dd>In <a href="#define-weather">heavy rain</a>, each PC needs to make a <a href="#define-stamina">Stamina</a> roll to march&mdash;if you fail, your base movement for this <a href="#define-time">shift</a> is reduced by one hex (which can mean you don't move at all). If some PCs succeed and others fail, you need to decide whether to leave stragglers behind or wait for them.
@@ -4733,11 +4724,11 @@
 				<dt>Encounters</dt>
 				<dd>As for marching, short breaks are included in the travel speeds for <a href="#define-vehicle">vehicles</a>, but if you stop for more than a few minutes, you will not be able to travel the entire distance. The GM has the final word on how many hexes of movement you lose when stopping for an encounter.</dd>
 				<dt>Terrain</dt>
-				<dd>When driving off-road, difficult <a href="#define-terrain">terrain</a> can reduce your speed. A terrain speed factor of &times;½ in a hex means that you need to spend two hexes of movement to drive into it, a speed factor of &times;1/3 means you need to spend three hexes of movement, <em>etc.</em> You will sometimes need to accumulate movement over multiple <a href="#define-time">shifts</a> to move into a hex. When driving on-road, the terrain has no effect.</dd>
+				<dd>When driving off-road, difficult <a href="#define-travel">terrain</a> can reduce your speed. A terrain speed factor of &times;½ in a hex means that you need to spend two hexes of movement to drive into it, a speed factor of &times;1/3 means you need to spend three hexes of movement, <em>etc.</em> You will sometimes need to accumulate movement over multiple <a href="#define-time">shifts</a> to move into a hex. When driving on-road, the terrain has no effect.</dd>
 				<dt>Driving at Night</dt>
 				<dd>Driving off-road at night halves the effective travel speed, rounding fractions up.</dd>
 				<dt>Mishaps</dt>
-				<dd>At the start of each <a href="#define-time">shift</a> you drive, you must make a <a href="#define-skill-roll">skill roll</a> for driving, modified for <a href="#define-terrain">terrain</a> type. If you drive off-road into a new terrain type during a shift, you need to make an additional roll. In heavy rain, you get a &minus;2 <a href="#define-modifier">modifier</a>. If you fail, you suffer a mishap&mdash;make a roll on the <a href="#define-driving-mishaps">driving mishap table</a>. Typically, a mishap occurs about halfway into the movement of the shift&mdash;the GM decides the exact hex.</dd>
+				<dd>At the start of each <a href="#define-time">shift</a> you drive, you must make a <a href="#define-skill-roll">skill roll</a> for driving, modified for <a href="#define-travel">terrain</a> type. If you drive off-road into a new terrain type during a shift, you need to make an additional roll. In heavy rain, you get a &minus;2 <a href="#define-modifier">modifier</a>. If you fail, you suffer a mishap&mdash;make a roll on the <a href="#define-driving-mishaps">driving mishap table</a>. Typically, a mishap occurs about halfway into the movement of the shift&mdash;the GM decides the exact hex.</dd>
 				<dt>Fuel</dt>
 				<dd><a href="#define-vehicle">Vehicles</a> need fuel to operate. The <a href="#define-vehicle-list">lists</a> in <a href="#define-chapter-5">Chapter 5</a> indicate each vehicle's fuel capacity (in liters) and fuel consumption (in liters per hex driven). Off-road, the fuel consumption is doubled.</dd>
 				<dt>Mounts</dt>
@@ -4810,11 +4801,11 @@
 		<div id="define-keep-watch">
 			<h5 id="keeping-watch">Keeping Watch<a class="og-h-anchor" href="#keeping-watch" title="Permalink" aria-hidden="true"></a></h5>
 			<p class="og-ref">Page 43</p>
-			<p>During every <a href="#define-time">shift</a>, you can designate one character in your group who is responsible for scouting for threats and enemies. The lookout can keep watch and <a href="#define-march">march</a> at the same time. A lookout is useful during every shift, even after you <a href="#define-make-camp">make camp</a>. You don't need to have a lookout, but without one you have no chance of spotting threats before they are upon you. During journeys, the lookout makes a passive <a href="#define-observation">Observation</a> roll (cannot be <a href="#define-push">pushed</a>) when the GM indicates that the group is approaching an encounter. The distance between the lookout and the encounter depends on the <a href="#define-terrain">terrain</a> that you are traveling in. See the <a href="#define-terrain-examples">example terrain table</a>.</p>
+			<p>During every <a href="#define-time">shift</a>, you can designate one character in your group who is responsible for scouting for threats and enemies. The lookout can keep watch and <a href="#define-march">march</a> at the same time. A lookout is useful during every shift, even after you <a href="#define-make-camp">make camp</a>. You don't need to have a lookout, but without one you have no chance of spotting threats before they are upon you. During journeys, the lookout makes a passive <a href="#define-observation">Observation</a> roll (cannot be <a href="#define-push">pushed</a>) when the GM indicates that the group is approaching an encounter. The distance between the lookout and the encounter depends on the <a href="#define-travel">terrain</a> that you are traveling in. See the <a href="#define-terrain-examples">example terrain table</a>.</p>
 			<p>If the roll is successful, your lookout spots the other group before you are spotted yourselves. You can then decide whether to show yourselves, back off, or set up an ambush. If your <a href="#define-observation">Observation</a> roll fails, the other group spots you first.</p>
 			<dl>
 				<dt>Backing Off</dt>
-				<dd>If you back off from an encounter without being spotted, you can circle around it, off-road. This will cost you an additional hex of off-road movement (modified by <a href="#define-terrain">terrain</a>), before you can continue forward.</dd>
+				<dd>If you back off from an encounter without being spotted, you can circle around it, off-road. This will cost you an additional hex of off-road movement (modified by <a href="#define-travel">terrain</a>), before you can continue forward.</dd>
 				<dt>Vehicles</dt>
 				<dd>If you travel on or in a motor <a href="#define-vehicle">vehicle</a> and the group you encounter is on foot, you get a &minus;2 <a href="#define-modifier">modifier</a> to the <a href="#define-observation">Observation</a> roll to spot the encounter. If you are on foot while the encountered group is motorized, you get a +2 <a href="#define-modifier">modifier</a> to the roll. If both groups are in vehicles, roll normally.</dd>
 			</dl>
@@ -4822,7 +4813,7 @@
 		<div id="define-forage">
 			<h5 id="foraging">Foraging<a class="og-h-anchor" href="#foraging" title="Permalink" aria-hidden="true"></a></h5>
 			<p class="og-ref">Page 43, Page 44</p>
-			<p>If you are running out of provisions, you can spend a <a href="#define-time">shift</a> looking for edible plants or drinkable water in your current hex. To forage, first choose whether you are looking for food or water. Then make a <a href="#define-survival">Survival</a> roll, modified by the <a href="#define-terrain">terrain</a> type.</p>
+			<p>If you are running out of provisions, you can spend a <a href="#define-time">shift</a> looking for edible plants or drinkable water in your current hex. To forage, first choose whether you are looking for food or water. Then make a <a href="#define-survival">Survival</a> roll, modified by the <a href="#define-travel">terrain</a> type.</p>
 			<p>When foraging for food, success means that you find a number of rations of raw food equal to the number of successes you rolled. You can eat raw plants, but you will then need to make a <a href="#define-disease">sickness</a> roll against virulence 3 (D) to resist food poisoning.</p>
 			<p>Only one character can forage for food or water in the same hex during the same shift, but others can help the roll. For each shift you forage again in the same hex, you get a &minus;1 cumulative <a href="#define-modifier">modifier</a>. This <a href="#define-modifier">modifier</a> is reset after a week, except in wintertime.</p>
 		</div>
@@ -4831,7 +4822,7 @@
 		<div id="define-hunt">
 			<h5 id="hunting">Hunting<a class="og-h-anchor" href="#hunting" title="Permalink" aria-hidden="true"></a></h5>
 			<p class="og-ref">Page 44</p>
-			<p>Another way to find food during a journey is to hunt in your current hex. First roll for <a href="#define-survival">Survival</a>, modified for the <a href="#define-terrain">terrain</a> type. Success means that you have tracked some kind of prey. Roll on a hunting table based on the game setting to see what type of animal it is. If you roll multiple successes, you manage to track several prey&mdash;roll once for each, and then choose which one to hunt.</p>
+			<p>Another way to find food during a journey is to hunt in your current hex. First roll for <a href="#define-survival">Survival</a>, modified for the <a href="#define-travel">terrain</a> type. Success means that you have tracked some kind of prey. Roll on a hunting table based on the game setting to see what type of animal it is. If you roll multiple successes, you manage to track several prey&mdash;roll once for each, and then choose which one to hunt.</p>
 			<p>To kill a prey you have tracked, you must first make an <a href="#define-observation">Observation</a> roll to move into position without alerting the animal. Second, you must make a <a href="#define-ranged-combat">ranged</a> attack against the animal. If your attack inflicts <a href="#define-damage">damage</a> equal to or in excess of the <a href="#define-health-resolve">Health</a> rating of the animal, or if you score a critical hit, the animal is killed. If not, it's only wounded and escapes. You usually only get one shot.</p>
 			<p>The hunting table indicates how many rations of (domestic) food that your prey yields, once the meat has been cut and <a href="#define-cook">cooked</a>. You can eat raw meat, but you will then need to make a <a href="#define-disease">sickness</a> roll against virulence 6 (C) to resist food poisoning.</p>
 			<p>Only one character can roll for hunting in the same hex during the same <a href="#define-time">shift</a>, but others can help the roll. For each shift you hunt again in the same hex, you get a &minus;1 cumulative <a href="#define-modifier">modifier</a>. This <a href="#define-modifier">modifier</a> is reset after a week.</p>
@@ -4999,6 +4990,10 @@
 	</div>
 </div>
 <hr>
+
+<!--? mystery div somewhere-->
+</div>
+<!--? mystery div somewhere-->
 
 <!-- footer -->
 <div class="text-center pt-3 pb-3">
