@@ -157,23 +157,6 @@ html {
 	display: none;
 }
 
-img.og-icon { 
-	height: 1.1em;
-	width: 1.1em;
-	position: relative;
-	margin-right: 0.25rem;
-	display: inline-block;
-	white-space: pre;
-}
-.og-domain {
-	background-position: 100% 2rem;
-	background-size: 6rem 6rem;
-	background-repeat: no-repeat;
-}
-
-.og-recall { 
-	text-shadow: 1px 1px 0px #032;
-}
 #modeicon.theme-light { color: #000; }
 #modeicon.theme-dark { color: #fff; }
 
@@ -399,12 +382,10 @@ h6 a.og-h-anchor, .h6 a.og-h-anchor { margin-top: 0.25rem; }
 	display: block;
 	white-space: normal !important;
 }
-.og-fig-sm {
-	max-width: 6rem;
-}
-.og-fig-md {
-	max-width: 18rem;
-}
+
+.og-fig-xs { max-width: 4rem; }
+.og-fig-sm { max-width: 6rem; }
+.og-fig-md { max-width: 18rem; }
 .og-dice-pool {
 	background: url('../images/dice-pool.webp');
 	background-repeat: no-repeat;
@@ -490,6 +471,13 @@ body.theme-dark .tooltip-inner a { color: #facc8e !important; text-decoration: n
 
 ul.og-ability-tooltip, .og-ability-tooltip p {
 	margin-bottom: 0;
+}
+
+.tooltip-inner .og-dice-pool,
+.tooltip-inner .og-dice-step {
+	background-size: 6rem;
+	height: 6rem;
+	width: 6rem;
 }
 
 .tooltip-inner .og-omit { display: none !important; }
