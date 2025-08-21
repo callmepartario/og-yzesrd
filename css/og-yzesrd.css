@@ -156,7 +156,6 @@ h2 {
 	font-weight: 700;
 	font-size: 3rem;
 	text-align: center;
-	border-bottom: 0.1rem solid #164;
 }
 h2 .og-chapter {
 	font-weight: 900;
@@ -181,8 +180,12 @@ h5 {
 	font-size: 1.25rem;
 }
 h6, .h6 { 
-	font-weight: 500;
-	font-size: 1rem;
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+.og-border {
+	border-bottom: 0.1rem solid #164;
 }
 
 thead, dt { text-transform: uppercase;}
@@ -326,6 +329,11 @@ h6 a.og-h-anchor, .h6 a.og-h-anchor { margin-top: 0.15rem; }
 .tooltip-inner .h6 { 
 	font-weight: 700;
 	font-size: 1.25rem; 
+}
+
+.tooltip-inner h6, 
+.tooltip-inner .h6 { 
+	font-size: 0.8rem; 
 }
 
 .tooltip-inner .og-h-anchor { display: none !important }
