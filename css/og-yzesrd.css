@@ -389,20 +389,20 @@ h6 a.og-h-anchor, .h6 a.og-h-anchor { margin-top: 0.25rem; }
 .og-dice-pool {
 	background: url('../images/dice-pool.webp');
 	background-repeat: no-repeat;
-	background-size: 10rem;
+	background-size: 8rem;
 	float: right;
-	height: 10rem;
-	width: 10rem;
+	height: 8rem;
+	width: 8rem;
 	padding-left: 1rem;
 	padding-bottom: 1rem;
 }
 .og-dice-step {
 	background: url('../images/dice-step.webp');
 	background-repeat: no-repeat;
-	background-size: 10rem;
+	background-size: 8rem;
 	float: right;
-	height: 10rem;
-	width: 10rem;
+	height: 8rem;
+	width: 8rem;
 	padding-left: 1rem;
 	padding-bottom: 1rem;
 }
