@@ -288,7 +288,7 @@ ul.og-list-diamond {
 ul.og-list-diamond li { 
 	padding-left: 1.25rem;
 	background-repeat: no-repeat;
-	background-position: 0.25rem;
+	background-position: 0.25rem 0.4rem;
 	background-size: 0.75rem;
 }
 .theme-light ul.og-list-diamond li { background-image: url('../images/diamond-dark.webp'); }
