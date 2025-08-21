@@ -2,7 +2,7 @@
 
 Welcome Reader—
 
-[Old Gus' Year Zero Engine System Reference Document (OG-YZESRD)](https://callmepartario.github.io/og-yzesrd/) is a hypertext version of the [Year Zero Engine Standard Reference Document v1.0]([https://freeleaguepublishing.com/community-content/free-tabletop-licenses/).
+[Old Gus' Year Zero Engine Standard Reference Document (OG-YZESRD)](https://callmepartario.github.io/og-yzesrd/) is a hypertext version of the [Year Zero Engine Standard Reference Document v1.0]([https://freeleaguepublishing.com/community-content/free-tabletop-licenses/) .
 
 It is not affiliated with, endorsed by, or sponsored by [Free League Publishing](https://freeleaguepublishing.com/), and is published under the [Year Zero Engine Free Tabletop License](https://freeleaguepublishing.com/community-content/free-tabletop-licenses/).
 
