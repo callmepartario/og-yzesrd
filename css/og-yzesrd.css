@@ -399,8 +399,31 @@ h6 a.og-h-anchor, .h6 a.og-h-anchor { margin-top: 0.25rem; }
 	display: block;
 	white-space: normal !important;
 }
+.og-fig-sm {
+	max-width: 6rem;
+}
 .og-fig-md {
 	max-width: 18rem;
+}
+.og-dice-pool {
+	background: url('../images/dice-pool.webp');
+	background-repeat: no-repeat;
+	background-size: 10rem;
+	float: right;
+	height: 10rem;
+	width: 10rem;
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+}
+.og-dice-step {
+	background: url('../images/dice-step.webp');
+	background-repeat: no-repeat;
+	background-size: 10rem;
+	float: right;
+	height: 10rem;
+	width: 10rem;
+	padding-left: 1rem;
+	padding-bottom: 1rem;
 }
 
 /* page references */

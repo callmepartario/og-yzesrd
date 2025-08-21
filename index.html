@@ -102,7 +102,7 @@
 	<img class="og-fig-md mt-2 mb-2 d-dark" src="images/yze-white.webp" alt="Year Zero Engine">
 	<span class="og-subtitle">Standard Reference Document</span>
 </h1>
-<p class="small text-center">version 0.10d (2025-08-21)</p>
+<p class="small text-center">version 0.15a (2025-08-21)</p>
 <ul class="list-inline text-center">
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://freeleaguepublishing.com/">Free League Publishing Official</a></li>
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://github.com/callmepartario/og-yzesrd">Github</a></li>
@@ -204,6 +204,10 @@
 		<div id="define-dice">
 			<h4 id="dice">Dice<a class="og-h-anchor" href="#dice" title="Permalink" aria-hidden="true"></a></h4>
 			<p class="og-ref">Page 3</p>
+			<div class="float-end ps-1 pb-1">
+				<img class="d-block og-fig-sm" src="images/dice-pool.webp" alt="" aria-hidden="true">
+				<img class="d-block og-fig-sm" src="images/dice-step.webp" alt="" aria-hidden="true">
+			</div>
 			<p>As a character in a Year Zero Engine game, you will have to take risks. Sooner or later, you will end up in situations where the outcome is uncertain, no matter how skilled you are. It's time to break out the dice. Regular six-sided dice (also called D6) are required to play the dice pool version YZE, preferably 10&ndash;15 of them, while the step dice version of YZE uses polyhedral dice, including D8, D10 and D12. Some rules variations require dice in different colors.</p>
 			<dl>
 				<dt>Dice Pools <span class="small">vs</span> Step Dice</dt>
@@ -332,9 +336,10 @@
 </div>
 <div class="row">
 	<div class="col-12 col-md-6">
+		<div class="og-dice-pool"></div>
 		<h4 id="dice-pool-attributes">Dice Pool Attributes<a class="og-h-anchor" href="#dice-pool-attributes" title="Permalink" aria-hidden="true"></a></h4>
 		<p class="og-ref">Page 4</p>
-		<p>In the <a href="#define-dice">dice pool</a> version of YZE, human <a href="#define-attribute">attribute</a> scores range from 1 to 5. See the table below.</p>
+		<p>In the <a href="#define-dice">dice pool</a> version of YZE, human <a href="#define-attribute">attribute</a> scores range from 1 to 5.</p>
 		<dl>
 			<dt>Starting Scores</dt>
 			<dd>Typically, you can distribute 14 points across your attributes. You can assign no less than 2 and no more than 5 points to any attribute.</dd>
@@ -376,9 +381,10 @@
 		</div>
 	</div>
 	<div class="col-12 col-md-6">
+		<div class="og-dice-step"></div>
 		<h4 id="step-dice-attributes">Step Dice Attributes<a class="og-h-anchor" href="#step-dice-attributes" title="Permalink" aria-hidden="true"></a></h4>
 		<p class="og-ref">Page 4</p>
-		<p>In the <a href="#define-dice">step dice</a> version of YZE, <a href="#define-attribute">attributes</a> are rated on a scale from A to D. Each attribute rating is connected to a specific die type. See the table below.</p>
+		<p>In the <a href="#define-dice">step dice</a> version of YZE, <a href="#define-attribute">attributes</a> are rated on a scale from A to D. Each attribute rating is connected to a specific die type.</p>
 		<dl>
 			<dt>Starting Scores</dt>
 			<dd>You start with a baseline of C in all four attributes. You may then make three increases, of one step each, up to A. You can increase any attributes you want. You can gain one extra increase by decreasing one attribute from C to D.</dd>
@@ -516,6 +522,7 @@
 </div>
 <div class="row">
 	<div class="col-12 col-md-6">
+		<div class="og-dice-pool"></div>
 		<h4 id="dice-pool-skills">Dice Pool Skills<a class="og-h-anchor" href="#dice-pool-skills" title="Permalink" aria-hidden="true"></a></h4>
 		<p class="og-ref">Page 5</p>
 		<p>In the <a href="#define-dice">dice pool</a> version of YZE, <a href="#define-skill">skills</a> are measured by skill level on a scale from 0 to 5. The higher the number, the better.</p>
@@ -560,9 +567,10 @@
 		</div>
 	</div>
 	<div class="col-12 col-md-6">
+		<div class="og-dice-step"></div>
 		<h4 id="step-dice-skills">Step Dice Skills<a class="og-h-anchor" href="#step-dice-skills" title="Permalink" aria-hidden="true"></a></h4>
 		<p class="og-ref">Page 5</p>
-		<p>In the <a href="#define-dice">step dice</a> version of YZE, <a href="#define-skill">skills</a> levels are measured on a scale from A to D just like <a href="#define-attribute">attributes</a>. Just like for attributes, each skill level is connected to a specific die type. See the table below.</p>
+		<p>In the <a href="#define-dice">step dice</a> version of YZE, <a href="#define-skill">skills</a> levels are measured on a scale from A to D just like <a href="#define-attribute">attributes</a>. Just like for attributes, each skill level is connected to a specific die type.</p>
 		<dl>
 			<dt>No Skill Level?</dt>
 			<dd>You can generally roll for a skill even if you have no level at all in that skill&mdash;in that case, only use the associated attribute for the skill in question.</dd>
@@ -881,6 +889,7 @@
 		</div>
 	</div>
 	<div class="col-12 col-md-6">
+		<span class="og-dice-pool"></span>
 		<h4 id="artifact-dice">Artifact Dice<a class="og-h-anchor" href="#artifact-dice" title="Permalink" aria-hidden="true"></a></h4>
 		<p class="og-ref">Page 12</p>
 		<p>You can use polyhedral dice even in a <a href="#define-dice">dice pool</a> YZE game, as artifact dice from especially powerful or magical items. Such items are divided into three categories, depending on the type of dice they give:</p>
@@ -904,12 +913,14 @@
 		<h4 id="gear-repairing">Repairing Gear<a class="og-h-anchor" href="#gear-repairing" title="Permalink" aria-hidden="true"></a></h4>
 		<p class="og-ref">Page 12</p>
 		<p>Damaged gear can be repaired. It takes a <a href="#define-time">Shift</a> of work and a successful <a href="#define-crafting">Crafting</a> <a href="#define-skill-roll">skill roll</a>. If the roll is successful, the gear bonus/reliability is recovered by one point for every success rolled, up to the starting score. If the roll fails, the gear bonus/reliability is permanently decreased to its current score. If the gear bonus/reliability has been reduced to zero and the attempt at repair fails, the item is permanently destroyed. Some items can require specialized tools, spare parts, or <a href="#define-specialty">specialties</a> to repair.</p>
-		<h5 id="gear-reliability">Gear Reliability<a class="og-h-anchor" href="#gear-reliability" title="Permalink" aria-hidden="true"></a></h5>
-		<p class="og-ref">Page 12</p>
-		<p>In <a href="#define-dice">step dice</a> YZE games, gear can have reliability ratings. Each point of <a href="#define-damage">damage</a> from <a href="#define-push">pushing rolls</a> or outside force reduces the reliability rating by 1. When it reaches zero, the item is broken and can no longer be used. A typical piece of sturdy, mechanical gear in good condition has a reliability rating of 5, but delicate or badly built gear can start with a lower rating.</p>
+		<div class="og-dice-pool"></div>
 		<h5 id="gear-degrading">Degrading Gear Bonus<a class="og-h-anchor" href="#gear-degrading" title="Permalink" aria-hidden="true"></a></h5> 	
 		<p class="og-ref">Page 12</p>
 		<p>In <a href="#define-dice">dice pool</a> YZE games with <a href="#define-attribute-damage">attribute damage</a>, the gear bonus works like an <a href="#define-attribute">attribute</a> for the gear, and can be reduced when <a href="#define-push">pushing</a> a <a href="#define-skill-roll">skill roll</a>. For every <a href="#define-push">bane</a> (1) you roll on your base dice from gear when pushing, the item's gear bonus is decreased by one. It simply doesn't work as well anymore. If the gear bonus reaches zero, the item is broken and cannot be used. The gear bonus of an item can be reduced by external <a href="#define-damage">damage</a> as well.</p>
+		<div class="og-dice-step"></div>
+		<h5 id="gear-reliability">Gear Reliability<a class="og-h-anchor" href="#gear-reliability" title="Permalink" aria-hidden="true"></a></h5>
+		<p class="og-ref">Page 12</p>
+		<p>In <a href="#define-dice">step dice</a> YZE games, gear can have reliability ratings. Each point of <a href="#define-damage">damage</a> from <a href="#define-push">pushing rolls</a> or outside force reduces the reliability rating by 1. When it reaches zero, the item is broken and can no longer be used. A typical piece of sturdy, mechanical gear in good condition has a reliability rating of 5, but delicate or badly built gear can start with a lower rating.</p>
 	</div>
 </div>
 <hr>
@@ -947,6 +958,7 @@
 		</dl>
 	</div>
 	<div class="col-12 col-md-6">
+		<span class="og-dice-pool"></span>
 		<h5 id="dice-pool-skill-level-increase">Dice Pool Skill Level Increase<a class="og-h-anchor" href="#dice-pool-skill-level-increase" title="Permalink" aria-hidden="true"></a></h5>
 		<p class="og-ref">Page 7</p>
 		<div class="table-responsive">
@@ -1026,6 +1038,7 @@
 			<h3 id="skill-rolls">Skill Rolls<a class="og-h-anchor" href="#skill-rolls" title="Permalink" aria-hidden="true"></a></h3>
 			<p>Roleplaying is a conversation. The Gamemaster describes the scene, you describe how your PCs behave, the GM describes how any NPCs react, you reply, and it goes back and forth. That is how the story is told and progresses. But sooner or later, a decisive situation will arise, a point of no return, a conflict that conversation alone cannot resolve. Then it's time to break out the dice and use one of your <a href="#define-skill">skills</a>.</p>
 		</div>
+		<span class="og-dice-pool"></span>
 		<h4 id="dice-pool-skill-rolls">Dice Pool Skill Rolls<a class="og-h-anchor" href="#dice-pool-skill-rolls" title="Permalink" aria-hidden="true"></a></h4>
 		<p class="og-ref">Page 8</p>
 		<p>To roll for a <a href="#define-skill">skills</a> in the <a href="#define-dice">dice pool</a> version, grab a number of six-sided dice equal to your skill level plus your current score in the <a href="#define-attribute">attribute</a> that is connected to that skill. These are your base dice. Then roll all the dice together.</p>
@@ -1037,6 +1050,7 @@
 			<dt>Gear</dt>
 			<dd>Useful <a href="#define-gear">gear</a> can give you extra base dice to roll.</dd>
 		</dl>
+		<span class="og-dice-step"></span>
 		<h4 id="step-dice-skill-rolls">Step Dice Skill Rolls<a class="og-h-anchor" href="#step-dice-skill-rolls" title="Permalink" aria-hidden="true"></a></h4>
 		<p class="og-ref">Page 8</p>
 		<p>To roll for a <a href="#define-skill">skills</a> in the <a href="#define-dice">step dice</a> version, grab two dice&mdash;one for your skill level and another for the base <a href="#define-attribute">attribute</a> that is connected to the skill. These two dice are called your base dice. The type of base dice to roll depends on your levels in the skill and attribute. Then roll your two base dice together.</p>
@@ -1197,10 +1211,12 @@
 			<p>Sometimes, external factors help you to succeed. Such modifiers will give you additional base dice to roll (in the <a href="#define-dice">dice pool</a> version) or step your base dice to bigger dice (in the <a href="#define-dice">step dice</a> version). Other times, something hampers your action. This removes base dice from your pool (<a href="#define-dice">dice pool</a> version) or downsteps your base dice (<a href="#define-dice">step dice</a>).</p>
 			<p>You can get such modifiers to <a href="#define-skill-roll">skill rolls</a> in several different ways: <a href="#define-specialty">specialties</a>, the difficulty of the action itself, and <a href="#define-help">help from others</a>.</p>
 		</div>
+		<span class="og-dice-pool"></span>
 		<h4 id="dice-pool-modifiers">Dice Pool Modifiers<a class="og-h-anchor" href="#dice-pool-modifiers" title="Permalink" aria-hidden="true"></a></h4>
 		<p class="og-ref">Page 10</p>
 		<p>A +1 modifier means you roll one extra base die, +2 means you roll two extra base dice, and so on. A &minus;1 modifier means you roll one base die fewer than normal, &minus;2 means two fewer, and so on. Several modifiers can apply to the same roll, and they are cumulative.</p>
 		<p>Always add and remove base dice from your skills, if you can (not from <a href="#define-attribute">attributes</a> or <a href="#define-gear">gear</a>). If you don't have enough dice from skills, remove base dice from gear. If you run out of gear dice as well, remove base dice from attributes. If you end up with no dice at all, you have no chance to succeed&mdash;time to rethink your strategy!</p>
+		<span class="og-dice-step"></span>
 		<h4 id="step-dice-modifiers">Step Dice Modifiers<a class="og-h-anchor" href="#step-dice-modifiers" title="Permalink" aria-hidden="true"></a></h4>
 		<p class="og-ref">Page 10</p>
 		<p>A +1 modifier means upgrading a base die one step, a +2 modifier means upgrading two steps, and so on. A &minus;1 modifier means downgrading a base die one step, &minus;2 means two steps down, and so on. Several modifiers can apply to the same roll, and they are cumulative.</p>
