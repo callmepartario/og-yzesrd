@@ -291,14 +291,18 @@ h6, .h6 {
 
 thead, dt { text-transform: uppercase;}
 
-ul.og-list-diamond { list-style-type: none; padding-left: 1rem; }
-ul.og-list-diamond li { padding-left: 0.5rem; }
-ul.og-list-diamond li::marker { 
-	content: '\2666';
-	margin-right: 0.25rem;
+ul.og-list-diamond { 
+	list-style-type: none;
+	padding-left: 0.1rem;
 }
-.theme-light ul.og-list-diamond li::marker { color: #164; }
-.theme-dark ul.og-list-diamond li::marker { color: #9dc; }
+ul.og-list-diamond li { 
+	padding-left: 1.25rem;
+	background-repeat: no-repeat;
+	background-position: 0.25rem;
+	background-size: 0.75rem;
+}
+.theme-light ul.og-list-diamond li { background-image: url('../images/diamond-dark.webp'); }
+.theme-dark ul.og-list-diamond li { background-image: url('../images/diamond-light.webp'); }
 
 /* anchor link iconography - position */
 h2 a.og-h-anchor,
@@ -394,9 +398,9 @@ h6 a.og-h-anchor, .h6 a.og-h-anchor { margin-top: 0.15rem; }
 
 /* page references */
 .og-ref {
-	font-family: 'Outfit', Arial, Helvetica, sans-serif;
-	font-weight: 300;
-	font-size: 0.75rem;
+	font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 0.8rem;
 	text-transform: uppercase;
 	padding: 0 0 0 0.25rem;
 	border-left: 0.25rem solid #164;
@@ -431,7 +435,7 @@ h6 a.og-h-anchor, .h6 a.og-h-anchor { margin-top: 0.15rem; }
 
 .tooltip-inner h6, 
 .tooltip-inner .h6 { 
-	font-size: 0.8rem; 
+	font-size: 1rem; 
 }
 
 .tooltip-inner .og-h-anchor { display: none !important }
