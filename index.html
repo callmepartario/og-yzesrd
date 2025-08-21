@@ -102,7 +102,7 @@
 	<img class="og-fig-md mt-2 mb-2 d-dark" src="images/yze-white.webp" alt="Year Zero Engine">
 	<span class="og-subtitle">Standard Reference Document</span>
 </h1>
-<p class="small text-center">version 0.10c (2025-08-21)</p>
+<p class="small text-center">version 0.10d (2025-08-21)</p>
 <ul class="list-inline text-center">
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://freeleaguepublishing.com/">Free League Publishing Official</a></li>
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://github.com/callmepartario/og-yzesrd">Github</a></li>
@@ -644,7 +644,7 @@
 			<p>Roll for Stealth when trying to sneak past someone, staying undetected, or picking someone's pocket. If your opponent is actively looking for you, it's an <a href="#define-opposed-roll">opposed roll</a> against their <a href="#define-observation">Observation</a>. If not, it's just a straight <a href="#define-skill-roll">skill roll</a>. Each of the following external factors gives you a +1 <a href="#define-modifier">modifier</a> to the roll:</p>
 			<ul class="og-list-diamond">
 				<li>You blend into your surroundings.</li>
-				<li>The area is <a href="#define-darkness">dark</a> or <a href="#define-zone-feature">Dimly Lit</a>.</li>
+				<li>The area is <a href="#define-zone-feature">dark</a> or <a href="#define-zone-feature">dimly lit</a>.</li>
 				<li>The area is crowded or noisy.</li>
 				<li>Your opponent is distracted by something.</li>
 			</ul>
@@ -696,23 +696,25 @@
 			<dd>When you want to Persuade a whole group, you usually address the group's leader or spokesperson.</dd>
 		</dl>
 		<div class="alert pb-0">
-			<h6 id="negotiating-position">Negotiating Position<a class="og-h-anchor" href="#negotiating-position" title="Permalink" aria-hidden="true"></a></h6>
-			<p class="og-ref">Page 13</p>
-			<p>Your chances of Persuading someone are affected by your negotiating position. Each of the following factors gives you +1 <a href="#define-modifier">modifier</a> to the roll:</p>
-			<ul class="og-list-diamond">
-				<li>Your request doesn't cost your opponent anything.</li>
-				<li>Your opponent has suffered <a href="#define-damage">damage or stress</a>.</li>
-				<li>Your opponent is in custody or held captive by you.</li>
-				<li>You have helped your opponent previously.</li>
-				<li>You present your case very well (determined by the GM).</li>
-			</ul>
-			<p>Each of the following factors gives you a &minus;1 <a href="#define-modifier">modifier</a> to the roll:</p>
-			<ul class="og-list-diamond">
-				<li>Your opponent must take a serious risk or make a sacrifice to help you.</li>
-				<li>Your opponent has nothing to gain by helping you.</li>
-				<li>You are held captive by your opponent.</li>
-				<li>You are having trouble hearing or understanding each other.</li>
-			</ul>
+			<div id="define-negotiating-position">
+				<h6 id="negotiating-position">Negotiating Position<a class="og-h-anchor" href="#negotiating-position" title="Permalink" aria-hidden="true"></a></h6>
+				<p class="og-ref">Page 13</p>
+				<p>Your chances of Persuading someone are affected by your negotiating position. Each of the following factors gives you +1 <a href="#define-modifier">modifier</a> to the roll:</p>
+				<ul class="og-list-diamond">
+					<li>Your request doesn't cost your opponent anything.</li>
+					<li>Your opponent has suffered <a href="#define-damage">damage or stress</a>.</li>
+					<li>Your opponent is in custody or held captive by you.</li>
+					<li>You have helped your opponent previously.</li>
+					<li>You present your case very well (determined by the GM).</li>
+				</ul>
+				<p>Each of the following factors gives you a &minus;1 <a href="#define-modifier">modifier</a> to the roll:</p>
+				<ul class="og-list-diamond">
+					<li>Your opponent must take a serious risk or make a sacrifice to help you.</li>
+					<li>Your opponent has nothing to gain by helping you.</li>
+					<li>You are held captive by your opponent.</li>
+					<li>You are having trouble hearing or understanding each other.</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
@@ -1054,7 +1056,7 @@
 		<ul class="og-list-diamond">
 			<li>You act quickly.</li>
 			<li>You act quietly.</li>
-			<li>You help another character.</li>
+			<li>You <a href="#define-help">help</a> another character.</li>
 			<li>You impress someone.</li>
 			<li>You discover something unexpected.</li>
 		</ul>
@@ -1193,7 +1195,7 @@
 			<h3 id="modifiers">Modifiers<a class="og-h-anchor" href="#modifiers" title="Permalink" aria-hidden="true"></a></h3>
 			<p class="og-ref">Page 10</p>
 			<p>Sometimes, external factors help you to succeed. Such modifiers will give you additional base dice to roll (in the <a href="#define-dice">dice pool</a> version) or step your base dice to bigger dice (in the <a href="#define-dice">step dice</a> version). Other times, something hampers your action. This removes base dice from your pool (<a href="#define-dice">dice pool</a> version) or downsteps your base dice (<a href="#define-dice">step dice</a>).</p>
-			<p>You can get such modifiers to <a href="#define-skill-roll">skill rolls</a> in several different ways: <a href="#define-specialty">specialties</a>, the difficulty of the action itself, and help from others.</p>
+			<p>You can get such modifiers to <a href="#define-skill-roll">skill rolls</a> in several different ways: <a href="#define-specialty">specialties</a>, the difficulty of the action itself, and <a href="#define-help">help from others</a>.</p>
 		</div>
 		<h4 id="dice-pool-modifiers">Dice Pool Modifiers<a class="og-h-anchor" href="#dice-pool-modifiers" title="Permalink" aria-hidden="true"></a></h4>
 		<p class="og-ref">Page 10</p>
@@ -1207,12 +1209,10 @@
 	<div class="col-12 col-md-6">
 		<h4 id="difficulty">Difficulty<a class="og-h-anchor" href="#difficulty" title="Permalink" aria-hidden="true"></a></h4>
 		<p class="og-ref">Page 10, Page 11</p>
-		<p>Normally, the GM doesn't assess how difficult an action is. You only roll dice in challenging situations&mdash;period. But sometimes, the GM might want to underscore that external factors either help or hinder an action. Use the adjacent table for guidance.</p>
+		<p>Normally, the GM doesn't assess how difficult an action is. You only roll dice in challenging situations&mdash;period. But sometimes, the GM might want to underscore that external factors either help or hinder an action.</p>
 		<dl>
-			<dt>Help from Others</dt>
-			<dd>Other PCs or NPCs can help you succeed at a <a href="#define-skill-roll">skill roll</a>. This must be declared before you roll your dice. It must also make sense in the story&mdash;the individuals helping you must be physically present and have the capacity to support your action. The GM has final say. <span class="d-block mt-1">For each person helping you, you get a +1 <a href="#define-modifier">modifier</a>. No more than three people can help you with a single roll, meaning your maximum <a href="#define-modifier">modifier</a> from getting help is +3. In combat, helping counts as the same type of action as the one you are supporting (fast or slow). </span><span class="d-block mt-1">NPCs can help each other in the same way as player characters. Letting NPCs act in groups instead of individually is often an easy way to manage large numbers of NPCs in combat.</span></dd>
 			<dt>Specific Modifiers</dt>
-			<dd>There are also cases when <a href="#define-modifier">modifications</a> are imposed by the rules, like when you aim carefully with a ranged weapon, shoot at long distance, or if you're in a bad negotiation position when you attempt to Persuade someone. Some <a href="#define-specialty">specialties</a> also give you a positive <a href="#define-modifier">modifier</a> in certain situations.</dd>
+			<dd>There are also cases when <a href="#define-modifier">modifications</a> are imposed by the rules, like when you <a href="#define-aim">aim</a> carefully with a ranged weapon, <a href="#define-modifiers-ranged-fire">shoot at long distance</a>, or if you're in a bad <a href="#define-negotiating-position">negotiation position</a> when you attempt to <a href="#define-persuasion">Persuade</a> someone. Some <a href="#define-specialty">specialties</a> also give you a positive <a href="#define-modifier">modifier</a> in certain situations.</dd>
 		</dl>
 		<div class="table-responsive">
 			<table class="table table-light table-striped table-sm mb-3">
@@ -1254,6 +1254,12 @@
 					</tr>
 				</tbody>
 			</table>
+		</div>
+		<div id="define-help">
+			<h4 id="help-from-others">Help from Others<a class="og-h-anchor" href="#help-from-others" title="Permalink" aria-hidden="true"></a></h4>
+			<p>Other PCs or NPCs can help you succeed at a <a href="#define-skill-roll">skill roll</a>. This must be declared before you roll your dice. It must also make sense in the story&mdash;the individuals helping you must be physically present and have the capacity to support your action. The GM has final say.</p>
+			<p>For each person helping you, you get a +1 <a href="#define-modifier">modifier</a>. No more than three people can help you with a single roll, meaning your maximum <a href="#define-modifier">modifier</a> from getting help is +3. In combat, helping counts as the same type of action as the one you are supporting (fast or slow).</p>
+			<p>NPCs can help each other in the same way as player characters. Letting NPCs act in groups instead of individually is often an easy way to manage large numbers of NPCs in combat.</p>
 		</div>
 	</div>
 </div>
@@ -1307,20 +1313,22 @@
 			<h4 id="maps-and-zones">Maps &amp; Zones<a class="og-h-anchor" href="#maps-and-zones" title="Permalink" aria-hidden="true"></a></h4>
 			<p class="og-ref">Page 15</p>
 			<p>A violent conflict is typically played out using a map of the location where your characters happen to find themselves fighting for their lives.</p>
-			<p>The map is divided into zones. A zone is typically a room, a corridor, or an area of ground. How big a zone is varies&mdash;from a few steps across up to about 25 meters. A zone is generally smaller in a <a href="#define-zone-feature">Cramped</a> environment than in open <a href="#define-travel">terrain</a>.</p>
+			<p>The map is divided into zones. A zone is typically a room, a corridor, or an area of ground. How big a zone is varies&mdash;from a few steps across up to about 25 meters. A zone is generally smaller in a <a href="#define-zone-feature">cramped</a> environment than in open <a href="#define-travel">terrain</a>.</p>
 			<p>In pre-made scenario material, zones are usually indicated on a location map. In random encounters created on the fly, the GM can make a quick sketch of the area or simply describe it.</p>
 		</div>
 		<div id="define-zone-feature">
 			<h5 id="zone-features">Zone Features<a class="og-h-anchor" href="#zone-features" title="Permalink" aria-hidden="true"></a></h5>
-			<p class="og-ref">Page 15</p>
+			<p class="og-ref">Page 15, Page 24</p>
 			<p>Zones can have various features, which affect actions performed within them. Here are some examples:</p>
 			<dl>
 				<dt>Cluttered</dt>
 				<dd>The <a href="#define-zone">zone</a> is covered by dense undergrowth or filled with debris of some sort. You must roll for <a href="#define-mobility">Mobility</a> when you move into the zone. Failure means you manage to get into the zone, but you fall down.</dd>
-				<dt>Dimly Lit</dt>
-				<dd>The <a href="#define-zone">zone</a> is dimly lit. <a href="#define-observation">Observation</a> rolls in the zone get a &minus;2 <a href="#define-modifier">modifier</a>. <a href="#define-ranged-combat">Ranged</a> attacks into the zone also suffer a &minus;2 modifier, and can't pass through the zone.</dd>
 				<dt>Cramped</dt>
 				<dd>A crawlspace or narrow tunnel. In a cramped <a href="#define-zone">zone</a>, you can only crawl, not run. You also cannot move or shoot past individuals next to you against targets behind them.</dd>
+				<dt>Dimly Lit</dt>
+				<dd>The <a href="#define-zone">zone</a> is dimly lit. <a href="#define-observation">Observation</a> rolls in the zone get a &minus;2 <a href="#define-modifier">modifier</a>. <a href="#define-ranged-combat">Ranged</a> attacks into the zone also suffer a &minus;2 modifier, and can't pass through the zone.</dd>
+				<dt>Darkness</dt>
+				<dd>In complete darkness, you have no choice but to feel your way around. To run in complete darkness requires a successful <a href="#define-mobility">Mobility</a> roll, and you take one point of damage if you fail. You can attack opponents at <a href="#define-range">Engaged range</a> normally in darkness, but with a &minus;2 <a href="#define-modifier">modifier</a>. At <a href="#define-range">Short range</a>, you must roll for <a href="#define-observation">Observation</a> successfully (no action) to be able to attack the target, also with a &minus;2 <a href="#define-modifier">modifier</a>. You cannot hit targets at <a href="#define-range">Medium range</a> or more in total darkness.</dd>
 			</dl>
 		</div>
 	</div>
@@ -1419,13 +1427,13 @@
 				<dt>Describe Your Actions</dt>
 				<dd>When it's your turn to act, simply state which actions you wish to perform and roll dice if needed to see if you are successful. Some actions will give your opponent the opportunity to perform a reactive action that breaks the turn order.</dd>
 				<dt>Helping Others</dt>
-				<dd>If you wish to help another player character or NPC perform an action, it costs you one action of the same kind (slow or fast). You must state you are trying to help someone before any dice are rolled. Helping others occurs out of turn, <em>i.e.</em>, it breaks the <a href="#define-initiative">initiative</a> order in the <a href="#define-time">round</a>.</dd>
+				<dd>If you wish to <a href="#define-help">help</a> another player character or NPC perform an action, it costs you one action of the same kind (slow or fast). You must state you are trying to help someone before any dice are rolled. Helping others occurs out of turn, <em>i.e.</em>, it breaks the <a href="#define-initiative">initiative</a> order in the <a href="#define-time">round</a>.</dd>
 			</dl>
 		</div>
 		<div class="alert pb-0">
 			<h5 class="h6" id="mark-your-actions">Mark Your Actions<a class="og-h-anchor" href="#mark-your-actions" title="Permalink" aria-hidden="true"></a></h5>
 			<p class="og-ref">Page 16</p>
-			<p>Because helping and reactive actions occur out of turn, it can be hard to keep track of how many actions the combatants have performed. A tip is to keep track of this by turning the <a href="#define-initiative">initiative</a> card 90 degrees for every performed action. Turn it to the left for a <a href="#define-action">fast action</a> and to the right for a <a href="#define-action">slow action</a>, and all the way around 180 degrees once both actions in the turn are used up. All actions are refreshed at the start of each <a href="#define-time">round</a>.</p>
+			<p>Because <a href="#define-help">helping</a> and reactive actions occur out of turn, it can be hard to keep track of how many actions the combatants have performed. A tip is to keep track of this by turning the <a href="#define-initiative">initiative</a> card 90 degrees for every performed action. Turn it to the left for a <a href="#define-action">fast action</a> and to the right for a <a href="#define-action">slow action</a>, and all the way around 180 degrees once both actions in the turn are used up. All actions are refreshed at the start of each <a href="#define-time">round</a>.</p>
 		</div>
 	</div>
 	<div class="col-12 col-md-6">
@@ -1491,7 +1499,7 @@
 					<tr>
 						<th class="fw-normal" scope="row">Run</th>
 						<td>No <a href="#define-range">Engaged</a> enemy</td>
-						<td><a href="#define-mobility">Mobility</a> (in <a href="#define-zone-feature">Cluttered</a> <a href="#define-zone">zone</a>)</td>
+						<td><a href="#define-mobility">Mobility</a> (in <a href="#define-zone-feature">cluttered</a> <a href="#define-zone">zone</a>)</td>
 					</tr>
 					<tr>
 						<th class="fw-normal" scope="row">Move through door/hatch</th>
@@ -1509,7 +1517,7 @@
 						<td>&mdash;</td>
 					</tr>
 					<tr>
-						<th class="fw-normal" scope="row">Block attack</th>
+						<th class="fw-normal" scope="row"><a href="#define-block">Block attack</a></th>
 						<td>Attacked in <a href="#define-close-combat">close combat</a></td>
 						<td><a href="#define-melee">Melee</a></td>
 					</tr>
@@ -1567,10 +1575,10 @@
 <div id="define-move">
 	<h4 id="movement">Movement<a class="og-h-anchor" href="#movement" title="Permalink" aria-hidden="true"></a></h4>
 	<p class="og-ref">Page 17</p>
-	<p>To move during combat, you can spend a <a href="#define-action">fast action</a> to move from one <a href="#define-zone">zone</a> to a neighboring zone or between <a href="#define-range">Short</a> and <a href="#define-range">Engaged range</a> from an enemy or PC in the same zone you are already in. No roll is required to move, unless it's into a <a href="#define-zone-feature">Cluttered</a> zone.</p>
+	<p>To move during combat, you can spend a <a href="#define-action">fast action</a> to move from one <a href="#define-zone">zone</a> to a neighboring zone or between <a href="#define-range">Short</a> and <a href="#define-range">Engaged range</a> from an enemy or PC in the same zone you are already in. No roll is required to move, unless it's into a <a href="#define-zone-feature">cluttered</a> zone.</p>
 	<dl>
 		<dt>Crawling</dt>
-		<dd>Moving while prone, <em>i.e.</em>, crawling, is a <a href="#define-action">slow action</a>. That means you can't crawl twice in the same <a href="#define-time">round</a>. In a <a href="#define-zone-feature">Cramped</a> <a href="#define-zone">zone</a>, crawling is the only movement possible.</dd>
+		<dd>Moving while prone, <em>i.e.</em>, crawling, is a <a href="#define-action">slow action</a>. That means you can't crawl twice in the same <a href="#define-time">round</a>. In a <a href="#define-zone-feature">cramped</a> <a href="#define-zone">zone</a>, crawling is the only movement possible.</dd>
 		<dt>Close Combat</dt>
 		<dd>If you have an active enemy at <a href="#define-range">Engaged range</a>, you can't just walk away from <a href="#define-close-combat">close combat</a>. Instead, you must retreat.</dd>
 		<dt>Doors &amp; Hatches</dt>
@@ -1587,7 +1595,7 @@
 <h3 id="attacking">Attacking<a class="og-h-anchor" href="#attacking" title="Permalink" aria-hidden="true"></a></h3>
 <div class="alert pb-0">
 	<ul class="list-inline">
-		<li class="list-inline-item pe-3"><a href="#define-sneak-attack">Ambushes &amp; Sneak Attacks</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-sneak-attack">Sneak Attacks &amp; Ambushes</a></li>
 		<li class="list-inline-item pe-3"><a href="#define-close-combat">Close Combat</a></li>
 		<li class="list-inline-item pe-3"><a href="#define-ranged-combat">Ranged Combat</a></li>
 		<li class="list-inline-item pe-3"><a href="#define-weapon">Weapons</a></li>
@@ -1653,36 +1661,38 @@
 				<dd>Blocking breaks the turn order, but it does count against your two available actions in the <a href="#define-time">round</a> (one slow and one fast). For every block you perform, you get one less action when it is your turn, and once you have used both your actions during the round for blocks, you can no longer block further attacks. All actions are refreshed at the beginning of each new round. You can save unused actions to block later in the round, but never from one round to the next.</dd>
 			</dl>
 		</div>
-		<h5 id="close-combat-modifiers">Close Combat Modifiers<a class="og-h-anchor" href="#close-combat-modifiers" title="Permalink" aria-hidden="true"></a></h5>
-		<p class="og-ref">Page 18</p>
-		<div class="table-responsive">
-			<table class="table table-light table-striped table-sm mb-3">
-				<caption class="visually-hidden">Close Combat Modifiers</caption>
-				<thead>
-					<tr>
-						<th scope="col">Factor</th>
-						<th scope="col">Modifier</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th class="fw-normal" scope="row">Attacker prone</th>
-						<td>&minus;2</td>
-					</tr>
-					<tr>
-						<th class="fw-normal" scope="row">Target prone</th>
-						<td>+2</td>
-					</tr>
-					<tr>
-						<th class="fw-normal" scope="row">Defenseless target</th>
-						<td>+3</td>
-					</tr>
-					<tr>
-						<th class="fw-normal" scope="row"><a href="#define-special-attack">Diving blow</a></th>
-						<td>+2</td>
-					</tr>
-				</tbody>
-			</table>
+		<div id="define-modifiers-close-combat">
+			<h5 id="close-combat-modifiers">Close Combat Modifiers<a class="og-h-anchor" href="#close-combat-modifiers" title="Permalink" aria-hidden="true"></a></h5>
+			<p class="og-ref">Page 18</p>
+			<div class="table-responsive">
+				<table class="table table-light table-striped table-sm mb-3">
+					<caption class="visually-hidden">Close Combat Modifiers</caption>
+					<thead>
+						<tr>
+							<th scope="col">Factor</th>
+							<th scope="col">Modifier</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th class="fw-normal" scope="row">Attacker prone</th>
+							<td>&minus;2</td>
+						</tr>
+						<tr>
+							<th class="fw-normal" scope="row">Target prone</th>
+							<td>+2</td>
+						</tr>
+						<tr>
+							<th class="fw-normal" scope="row">Defenseless target</th>
+							<td>+3</td>
+						</tr>
+						<tr>
+							<th class="fw-normal" scope="row"><a href="#define-special-attack">Diving blow</a></th>
+							<td>+2</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</div>
 </div>
@@ -1701,7 +1711,7 @@
 				<dt>Target Size</dt>
 				<dd>Firing at a large target, such as a <a href="#define-vehicle">vehicle</a>, gives a +2 <a href="#define-modifier">modifier</a> to the attack. Firing at a small object, such a hatch or a hand-held item, gives a &minus;2 <a href="#define-modifier">modifier</a>.</dd>
 				<dt>Unseen Target</dt>
-				<dd>If you can't see your target (because of <a href="#define-darkness">darkness</a> or <a href="#define-cover">cover</a>) but still have a good idea of where they are, you can still fire, but with a &minus;2 <a href="#define-modifier">modifier</a>.</dd>
+				<dd>If you can't see your target (because of <a href="#define-zone-feature">darkness</a> or <a href="#define-cover">cover</a>) but still have a good idea of where they are, you can still fire, but with a &minus;2 <a href="#define-modifier">modifier</a>.</dd>
 			</dl>
 		</div>
 		<div id="define-aim">
@@ -1738,76 +1748,80 @@
 			<dt>Basic Autofire</dt>
 			<dd>A burst of auto fire counts as a normal <a href="#define-ranged-combat">ranged</a> attack, but if you hit, you may immediately make another attack against the same target or a different one. If you hit again, you may make a third attack. Even if this also hits, you don't get more attacks. After all attacks are resolved, you must make a <a href="#define-consumable">supply roll</a> for ammunition.</dd>
 		</dl>
-		<h5 id="overwatch">Overwatch<a class="og-h-anchor" href="#overwatch" title="Permalink" aria-hidden="true"></a></h5>
-		<p class="og-ref">Page 19</p>
-		<p>As a <a href="#define-action">fast action</a>, you can assume an overwatch position in a specified direction, as long as you have a ranged weapon and no enemies within <a href="#define-range">Engaged range</a>. This means that you aim in the specified direction and are ready to shoot. Between the time you assume the overwatch position and your time to act in the next <a href="#define-time">round</a>, you can fire your weapon against a target in the chosen direction.</p>
-		<p>You can fire whenever you want in the turn order, and your shot is resolved before all other actions&mdash;even if they are already declared. For example, if an enemy in the direction you are aiming declares that they want to fire a weapon, you can shoot first. The enemy is not allowed to change their attack after your overwatch attack.</p>
-		<p>Firing when in overwatch position counts as a normal attack (a <a href="#define-action">slow action</a>). Therefore, you must save your <a href="#define-action">slow action</a> in the round for any overwatch attack you want to make.</p>
-		<p>If both you and an enemy assume overwatch positions against each other, and both choose to fire against each other, then an opposed <a href="#define-marksmanship">Marksmanship</a> roll determines which attack goes first. This roll does not count as an action for either of you.</p>
-		<dl>
-			<dt>Losing Overwatch</dt>
-			<dd>You keep your overwatch position until you break it, or any of the following occurs:
-				<ul class="og-list-diamond">
-					<li>You perform any action other than overwatch fire.</li>
-					<li>You are attacked in <a href="#define-close-combat">close combat</a>.</li>
-					<li>You suffer <a href="#define-damage">damage</a>.</li>
-				</ul>
-			</dd>
-		</dl>
-		<h5 id="ranged-fire-modifiers">Ranged Fire Modifiers<a class="og-h-anchor" href="#ranged-fire-modifiers" title="Permalink" aria-hidden="true"></a></h5>
-		<p class="og-ref">Page 18</p>
-		<div class="table-responsive">
-			<table class="table table-light table-striped table-sm mb-3">
-				<caption class="visually-hidden">Ranged Fire Modifiers</caption>
-				<thead>
-					<tr>
-						<th scope="col">Factor</th>
-						<th scope="col">Modifier</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th class="fw-normal" scope="row"><a href="#define-aim">Aimed shot</a></th>
-						<td>+2</td>
-					</tr>
-					<tr>
-						<th class="fw-normal" scope="row">Target <a href="#define-range">Engaged</a></th>
-						<td>&minus;3/+3</td>
-					</tr>
-					<tr>
-						<th class="fw-normal" scope="row"><a href="#define-range">Short range</a></th>
-						<td>&mdash;</td>
-					</tr>
-					<tr>
-						<th class="fw-normal" scope="row"><a href="#define-range">Medium range</a></th>
-						<td>&minus;1</td>
-					</tr>
-					<tr>
-						<th class="fw-normal" scope="row"><a href="#define-range">Long range</a></th>
-						<td>&minus;2</td>
-					</tr>
-					<tr>
-						<th class="fw-normal" scope="row"><a href="#define-range">Extreme range</a></th>
-						<td>&minus;4</td>
-					</tr>
-					<tr>
-						<th class="fw-normal" scope="row">Large target</th>
-						<td>+2</td>
-					</tr>
-					<tr>
-						<th class="fw-normal" scope="row">Small target</th>
-						<td>&minus;2</td>
-					</tr>
-					<tr>
-						<th class="fw-normal" scope="row"><a href="#define-zone-feature">Dim light</a></th>
-						<td>&minus;1</td>
-					</tr>
-					<tr>
-						<th class="fw-normal" scope="row"><a href="#define-darkness">Darkness</a></th>
-						<td>&minus;2</td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="define-overwatch">
+			<h5 id="overwatch">Overwatch<a class="og-h-anchor" href="#overwatch" title="Permalink" aria-hidden="true"></a></h5>
+			<p class="og-ref">Page 19</p>
+			<p>As a <a href="#define-action">fast action</a>, you can assume an overwatch position in a specified direction, as long as you have a ranged weapon and no enemies within <a href="#define-range">Engaged range</a>. This means that you aim in the specified direction and are ready to shoot. Between the time you assume the overwatch position and your time to act in the next <a href="#define-time">round</a>, you can fire your weapon against a target in the chosen direction.</p>
+			<p>You can fire whenever you want in the turn order, and your shot is resolved before all other actions&mdash;even if they are already declared. For example, if an enemy in the direction you are aiming declares that they want to fire a weapon, you can shoot first. The enemy is not allowed to change their attack after your overwatch attack.</p>
+			<p>Firing when in overwatch position counts as a normal attack (a <a href="#define-action">slow action</a>). Therefore, you must save your <a href="#define-action">slow action</a> in the round for any overwatch attack you want to make.</p>
+			<p>If both you and an enemy assume overwatch positions against each other, and both choose to fire against each other, then an opposed <a href="#define-marksmanship">Marksmanship</a> roll determines which attack goes first. This roll does not count as an action for either of you.</p>
+			<dl>
+				<dt>Losing Overwatch</dt>
+				<dd>You keep your overwatch position until you break it, or any of the following occurs:
+					<ul class="og-list-diamond">
+						<li>You perform any action other than overwatch fire.</li>
+						<li>You are attacked in <a href="#define-close-combat">close combat</a>.</li>
+						<li>You suffer <a href="#define-damage">damage</a>.</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div id="define-modifiers-ranged-fire">
+			<h5 id="ranged-fire-modifiers">Ranged Fire Modifiers<a class="og-h-anchor" href="#ranged-fire-modifiers" title="Permalink" aria-hidden="true"></a></h5>
+			<p class="og-ref">Page 18</p>
+			<div class="table-responsive">
+				<table class="table table-light table-striped table-sm mb-3">
+					<caption class="visually-hidden">Ranged Fire Modifiers</caption>
+					<thead>
+						<tr>
+							<th scope="col">Factor</th>
+							<th scope="col">Modifier</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th class="fw-normal" scope="row"><a href="#define-aim">Aimed shot</a></th>
+							<td>+2</td>
+						</tr>
+						<tr>
+							<th class="fw-normal" scope="row">Target <a href="#define-range">Engaged</a></th>
+							<td>&minus;3/+3</td>
+						</tr>
+						<tr>
+							<th class="fw-normal" scope="row"><a href="#define-range">Short range</a></th>
+							<td>&mdash;</td>
+						</tr>
+						<tr>
+							<th class="fw-normal" scope="row"><a href="#define-range">Medium range</a></th>
+							<td>&minus;1</td>
+						</tr>
+						<tr>
+							<th class="fw-normal" scope="row"><a href="#define-range">Long range</a></th>
+							<td>&minus;2</td>
+						</tr>
+						<tr>
+							<th class="fw-normal" scope="row"><a href="#define-range">Extreme range</a></th>
+							<td>&minus;4</td>
+						</tr>
+						<tr>
+							<th class="fw-normal" scope="row">Large target</th>
+							<td>+2</td>
+						</tr>
+						<tr>
+							<th class="fw-normal" scope="row">Small target</th>
+							<td>&minus;2</td>
+						</tr>
+						<tr>
+							<th class="fw-normal" scope="row"><a href="#define-zone-feature">Dim light</a></th>
+							<td>&minus;1</td>
+						</tr>
+						<tr>
+							<th class="fw-normal" scope="row"><a href="#define-zone-feature">Darkness</a></th>
+							<td>&minus;2</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</div>
 </div>
@@ -1965,12 +1979,12 @@
 <h3 id="damage">Damage<a class="og-h-anchor" href="#damage" title="Permalink" aria-hidden="true"></a></h3>
 <div class="alert pb-0">
 	<ul class="list-inline">
-		<li class="list-inline-item pe-3"><a href="#define-damage-and-stress">Damage &amp; Stress</a></li>
-		<li class="list-inline-item pe-3"><a href="#define-body-armor">Body Armor</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-damage">Damage &amp; Stress</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-armor">Body Armor</a></li>
 		<li class="list-inline-item pe-3"><a href="#define-cover">Cover</a></li>
-		<li class="list-inline-item pe-3"><a href="#define-conditions">Conditions</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-condition">Conditions</a></li>
 		<li class="list-inline-item pe-3"><a href="#define-broken">Broken</a></li>
-		<li class="list-inline-item pe-3"><a href="#define-critical-injuries">Critical Injuries</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-critical-injury">Critical Injuries</a></li>
 	</ul>
 </div>
 <hr>
@@ -2673,23 +2687,43 @@
 	</table>
 </div>
 <hr>
+
+<h3 id="other-hazards">Other Hazards<a class="og-h-anchor" href="#other-hazards" title="Permalink" aria-hidden="true"></a></h3>
+<div class="alert pb-0">
+	<ul class="list-inline">
+		<li class="list-inline-item pe-3"><a href="#define-cold">Cold</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-disease">Disease</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-drowning">Drowning</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-explosion">Explosions</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-falling">Falling</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-fire">Fire</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-poison">Poison</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-sleep-deprivation">Sleep Deprivation</a></li>
+		<li class="list-inline-item pe-3"><a href="#define-starvation">Starvation</a></li>
+	</ul>
+</div>
 <div class="row">
 	<div class="col-12 col-md-6">
-		<h3 id="other-hazards">Other Hazards<a class="og-h-anchor" href="#other-hazards" title="Permalink" aria-hidden="true"></a></h3>
-		<div id="define-darkness">
-			<h4 id="darkness">Darkness<a class="og-h-anchor" href="#darkness" title="Permalink" aria-hidden="true"></a></h4>
-			<p class="og-ref">Page 24</p>
-			<p>In complete darkness, you have no choice but to feel your way around. To run in complete darkness requires a successful <a href="#define-mobility">Mobility</a> roll, and you take one point of damage if you fail. You can attack opponents at <a href="#define-range">Engaged range</a> normally in darkness, but with a &minus;2 <a href="#define-modifier">modifier</a>. At <a href="#define-range">Short range</a>, you must roll for <a href="#define-observation">Observation</a> successfully (no action) to be able to attack the target, also with a &minus;2 <a href="#define-modifier">modifier</a>. You cannot hit targets at <a href="#define-range">Medium range</a> or more in total darkness.</p>
+		<div id="define-cold">
+			<h4 id="cold">Cold<a class="og-h-anchor" href="#cold" title="Permalink" aria-hidden="true"></a></h4>
+			<p class="og-ref">Page 25</p>
+			<p>When the cold is bitter and you don't have adequate clothes or shelter (GM's discretion), you must roll for <a href="#define-stamina">Stamina</a> at regular intervals. The colder it is, the more frequently you need to roll. A chilly fall day requires a roll per day&mdash;in winter, you might have to roll once every <a href="#define-time">shift</a> or even every <a href="#define-time">stretch</a> in extreme conditions. Extra protection, like a blanket, can give a bonus to your roll.</p>
+			<p>If you fail, you become <a href="#define-cold">hypothermic</a> and suffer one point of damage and one point of <a href="#define-damage">stress</a> (damage to <a href="#define-attribute">Strength and Wits</a>). You also cannot heal naturally. You must keep rolling for <a href="#define-stamina">Stamina</a> at the same interval, suffering more <a href="#define-damage">damage and stress</a> each time you fail. If you are <a href="#define-broken">broken</a> while <a href="#define-cold">hypothermic</a>, you die the next time you need to roll. Only after you have warmed up, if only by a campfire, are you able to heal again.</p>
 		</div>
-		<div id="define-fire">
-			<h4 id="fire">Fire<a class="og-h-anchor" href="#fire" title="Permalink" aria-hidden="true"></a></h4>
-			<p>When exposed to fire, roll for its intensity. In the <a href="#define-dice">dice pool</a> system, fires typically range from 3 to 9. In the <a href="#define-dice">step dice</a> system, fire intensities range from D to A, and you roll two base dice of the corresponding type.</p>
+		<div id="define-disease">
+			<h4 id="disease">Disease<a class="og-h-anchor" href="#disease" title="Permalink" aria-hidden="true"></a></h4>
+			<p class="og-ref">Page 25</p>
+			<p>When exposed to a dangerous contagion or infection, make an <a href="#define-opposed-roll">opposed roll</a> for <a href="#define-stamina">Stamina</a> against the virulence rating of the disease. This is called an infection roll. A typical disease has a virulence of 6 (C in the <a href="#define-dice">step dice</a> system, roll two base dice of the corresponding type), but there are diseases with much higher virulence.</p>
+			<p>If you fail the roll, you fall ill, which means you suffer one point of damage and cannot heal <a href="#define-damage">damage</a>. Make another infection roll once per day. Each failed roll means you suffer another point of <a href="#define-damage">damage</a>. If you are <a href="#define-broken">broken</a> by damage while sick, you die after another day if you're not given aid (below) before then. As soon as you succeed at an infection roll, you are no longer ill. Stop rolling infection rolls and heal your damage normally.</p>
 			<dl>
-				<dt>Effect</dt>
-				<dd>For every success rolled for the fire, you suffer one point of <a href="#define-damage">damage</a>. If you take damage, you catch fire and continue to burn. When burning, you suffer another attack each <a href="#define-time">round</a>, on your turn. The intensity increases by one step each round. As soon as a fire attack inflicts no damage, the fire goes out by itself. You, or a friend at <a href="#define-range">Engaged range</a>, can put out the fire with a successful <a href="#define-mobility">Mobility</a> roll (<a href="#define-action">slow action</a>). Using a blanket or similar object gives a +2 <a href="#define-modifier">modifier</a>.</dd>
-				<dt>Crits</dt>
-				<dd>Fire doesn't cause normal critical injuries. Instead, if you are <a href="#define-broken">broken</a> by fire damage, or suffer fire damage when already broken, you must make a <a href="#define-death">death save</a> on your turn every <a href="#define-time">round</a> until you die or you are saved by a <a href="#define-healing">Healing</a> roll.</dd>
+				<dt>Healing</dt>
+				<dd>If you are cared for by someone during your sickness, this person can roll your sickness rolls instead of you. The healer rolls for their <a href="#define-healing">Healing</a> skill with a +2 <a href="#define-modifier">modifier</a>.</dd>
 			</dl>
+		</div>
+		<div id="define-drowning">
+			<h4 id="drowning">Drowning<a class="og-h-anchor" href="#drowning" title="Permalink" aria-hidden="true"></a></h4>
+			<p class="og-ref">Page 25</p>
+			<p>All PCs are assumed to know how to swim. If you end up in water, you need to make a <a href="#define-stamina">Stamina</a> roll every <a href="#define-time">stretch</a> to stay afloat. If you wear metal <a href="#define-armor">armor</a>, you sink. Under water, you need to make a <a href="#define-stamina">Stamina</a> roll every <a href="#define-time">round</a> to hold your breath. If you fail, you start to drown and suffer one point of damage to <a href="#define-attribute">Strength</a> every round until someone saves you. If you are <a href="#define-broken">broken</a> when drowning, you die after one stretch.</p>
 		</div>
 		<div id="define-explosion">
 			<h4 id="explosions">Explosions<a class="og-h-anchor" href="#explosions" title="Permalink" aria-hidden="true"></a></h4>
@@ -2737,18 +2771,24 @@
 				</table>
 			</div>
 		</div>
+	</div>
+	<div class="col-12 col-md-6">
 		<div id="define-falling">
 			<h4 id="falling">Falling<a class="og-h-anchor" href="#falling" title="Permalink" aria-hidden="true"></a></h4>
 			<p class="og-ref">Page 24</p>
 			<p>Falling on a hard surface automatically inflicts an amount of damage to you equal to the height of the fall (in meters) divided by 2, rounding all fractions down. In a controlled jump, roll <a href="#define-mobility">Mobility</a>&mdash;each success rolled reduces the damage done by one.</p>
 		</div>
-		<div id="define-drowning">
-			<h4 id="drowning">Drowning<a class="og-h-anchor" href="#drowning" title="Permalink" aria-hidden="true"></a></h4>
-			<p class="og-ref">Page 25</p>
-			<p>All PCs are assumed to know how to swim. If you end up in water, you need to make a <a href="#define-stamina">Stamina</a> roll every <a href="#define-time">stretch</a> to stay afloat. If you wear metal <a href="#define-armor">armor</a>, you sink. Under water, you need to make a <a href="#define-stamina">Stamina</a> roll every <a href="#define-time">round</a> to hold your breath. If you fail, you start to drown and suffer one point of damage to <a href="#define-attribute">Strength</a> every round until someone saves you. If you are <a href="#define-broken">broken</a> when drowning, you die after one stretch.</p>
+		<div id="define-fire">
+			<h4 id="fire">Fire<a class="og-h-anchor" href="#fire" title="Permalink" aria-hidden="true"></a></h4>
+			<p class="og-ref">Page 24</p>
+			<p>When exposed to fire, roll for its intensity. In the <a href="#define-dice">dice pool</a> system, fires typically range from 3 to 9. In the <a href="#define-dice">step dice</a> system, fire intensities range from D to A, and you roll two base dice of the corresponding type.</p>
+			<dl>
+				<dt>Effect</dt>
+				<dd>For every success rolled for the fire, you suffer one point of <a href="#define-damage">damage</a>. If you take damage, you catch fire and continue to burn. When burning, you suffer another attack each <a href="#define-time">round</a>, on your turn. The intensity increases by one step each round. As soon as a fire attack inflicts no damage, the fire goes out by itself. You, or a friend at <a href="#define-range">Engaged range</a>, can put out the fire with a successful <a href="#define-mobility">Mobility</a> roll (<a href="#define-action">slow action</a>). Using a blanket or similar object gives a +2 <a href="#define-modifier">modifier</a>.</dd>
+				<dt>Crits</dt>
+				<dd>Fire doesn't cause normal critical injuries. Instead, if you are <a href="#define-broken">broken</a> by fire damage, or suffer fire damage when already broken, you must make a <a href="#define-death">death save</a> on your turn every <a href="#define-time">round</a> until you die or you are saved by a <a href="#define-healing">Healing</a> roll.</dd>
+			</dl>
 		</div>
-	</div>
-	<div class="col-12 col-md-6">
 		<div id="define-poison">
 			<h4 id="poison">Poison<a class="og-h-anchor" href="#poison" title="Permalink" aria-hidden="true"></a></h4>
 			<p class="og-ref">Page 25</p>
@@ -2763,31 +2803,15 @@
 				<dd>You fall asleep, unable to wake up for a <a href="#define-time">shift</a>.</dd>
 			</dl>
 		</div>
-		<div id="define-disease">
-			<h4 id="disease">Disease<a class="og-h-anchor" href="#disease" title="Permalink" aria-hidden="true"></a></h4>
-			<p class="og-ref">Page 25</p>
-			<p>When exposed to a dangerous contagion or infection, make an <a href="#define-opposed-roll">opposed roll</a> for <a href="#define-stamina">Stamina</a> against the virulence rating of the disease. This is called an infection roll. A typical disease has a virulence of 6 (C in the <a href="#define-dice">step dice</a> system, roll two base dice of the corresponding type), but there are diseases with much higher virulence.</p>
-			<p>If you fail the roll, you fall ill, which means you suffer one point of damage and cannot heal <a href="#define-damage">damage</a>. Make another infection roll once per day. Each failed roll means you suffer another point of <a href="#define-damage">damage</a>. If you are <a href="#define-broken">broken</a> by damage while sick, you die after another day if you're not given aid (below) before then. As soon as you succeed at an infection roll, you are no longer ill. Stop rolling infection rolls and heal your damage normally.</p>
-			<dl>
-				<dt>Healing</dt>
-				<dd>If you are cared for by someone during your sickness, this person can roll your sickness rolls instead of you. The healer rolls for their <a href="#define-healing">Healing</a> skill with a +2 <a href="#define-modifier">modifier</a>.</dd>
-			</dl>
-		</div>
-		<div id="define-cold">
-			<h4 id="cold">Cold<a class="og-h-anchor" href="#cold" title="Permalink" aria-hidden="true"></a></h4>
-			<p class="og-ref">Page 25</p>
-			<p>When the cold is bitter and you don't have adequate clothes or shelter (GM's discretion), you must roll for <a href="#define-stamina">Stamina</a> at regular intervals. The colder it is, the more frequently you need to roll. A chilly fall day requires a roll per day&mdash;in winter, you might have to roll once every <a href="#define-time">shift</a> or even every <a href="#define-time">stretch</a> in extreme conditions. Extra protection, like a blanket, can give a bonus to your roll.</p>
-			<p>If you fail, you become <a href="#define-cold">hypothermic</a> and suffer one point of damage and one point of <a href="#define-damage">stress</a> (damage to <a href="#define-attribute">Strength and Wits</a>). You also cannot heal naturally. You must keep rolling for <a href="#define-stamina">Stamina</a> at the same interval, suffering more <a href="#define-damage">damage and stress</a> each time you fail. If you are <a href="#define-broken">broken</a> while <a href="#define-cold">hypothermic</a>, you die the next time you need to roll. Only after you have warmed up, if only by a campfire, are you able to heal again.</p>
-		</div>
-		<div class="define-starvation">
-			<h4 id="starvation">Starvation<a class="og-h-anchor" href="#starvation" title="Permalink" aria-hidden="true"></a></h4>
-			<p class="og-ref">Page 25</p>
-			<p>You must eat a ration of food at least once every day. After a day without food, you starve. When starving, you don't heal damage (<a href="#define-attribute">Strength</a>) normally. You heal <a href="#define-damage">stress</a> (other <a href="#define-attribute">attributes</a>) normally. You also suffer one point of damage per week. If you are <a href="#define-broken">broken</a> while Starving, you die after another week without food. As soon as you have eaten, you are no longer starving.</p>
-		</div>
 		<div id="define-sleep-deprivation">
 			<h4 id="sleep-deprivation">Sleep Deprivation<a class="og-h-anchor" href="#sleep-deprivation" title="Permalink" aria-hidden="true"></a></h4>
 			<p class="og-ref">Page 25</p>
 			<p>You need to <a href="#define-sleep">sleep</a> for at least one <a href="#define-time">shift</a> each day. After one day without sleep, you cannot heal <a href="#define-damage">stress</a> (damage to <a href="#define-attribute">Wits</a>). If you are <a href="#define-broken">broken</a> by <a href="#define-damage">stress</a> (damage to <a href="#define-attribute">Wits</a>) while sleep deprived, you collapse and sleep for at least one shift, and are unable to wake up during that time. As soon as you have slept for at least a shift, you are no longer sleep deprived.</p>
+		</div>
+		<div id="define-starvation">
+			<h4 id="starvation">Starvation<a class="og-h-anchor" href="#starvation" title="Permalink" aria-hidden="true"></a></h4>
+			<p class="og-ref">Page 25</p>
+			<p>You must eat a ration of food at least once every day. After a day without food, you starve. When starving, you don't heal damage (<a href="#define-attribute">Strength</a>) normally. You heal <a href="#define-damage">stress</a> (other <a href="#define-attribute">attributes</a>) normally. You also suffer one point of damage per week. If you are <a href="#define-broken">broken</a> while Starving, you die after another week without food. As soon as you have eaten, you are no longer starving.</p>
 		</div>
 	</div>
 </div>
@@ -2801,7 +2825,7 @@
 			<p>A horse or other riding animal can be a useful asset. The animal can carry <a href="#define-gear">gear</a> for you, and you can take advantage of being in the saddle during combat.</p>
 			<dl>
 				<dt>Movement</dt>
-				<dd>Mounts allow you to move faster in combat than on foot. When making a <a href="#define-move">move action</a>, make a <a href="#define-mobility">Mobility</a> roll&mdash;for each success, you may move an additional <a href="#define-zone">zone</a>. Mounts generally can't move into <a href="#define-zone-feature">Cramped</a> zones at all. In <a href="#define-zone-feature">Cluttered</a> zones, they can only move one zone per action.</dd>
+				<dd>Mounts allow you to move faster in combat than on foot. When making a <a href="#define-move">move action</a>, make a <a href="#define-mobility">Mobility</a> roll&mdash;for each success, you may move an additional <a href="#define-zone">zone</a>. Mounts generally can't move into <a href="#define-zone-feature">cramped</a> zones at all. In <a href="#define-zone-feature">cluttered</a> zones, they can only move one zone per action.</dd>
 				<dt>Move</dt>
 				<dd>When you are on horseback and make a <a href="#define-mobility">Mobility</a> roll, use the animal's <a href="#define-attribute">Agility</a> instead of your own.</dd>
 				<dt>Close Combat</dt>
@@ -2957,7 +2981,7 @@
 			</dl>
 			<h5 id="repairs">Repairs<a class="og-h-anchor" href="#repairs" title="Permalink" aria-hidden="true"></a></h5>
 			<p class="og-ref">Page 26</p>
-			<p>Repairing damage to a <a href="#define-vehicle">vehicle</a> requires one or several <a href="#define-crafting">Crafting</a> rolls. One roll can be made per <a href="#define-time">shift</a>. Only one person can roll to repair, but others can help. Each success removes one point of <a href="#define-damage">damage</a>. If the vehicle was <a href="#define-vehicle-damage">wrecked</a>, it is no longer considered wrecked once one point of damage has been repaired.</p>
+			<p>Repairing damage to a <a href="#define-vehicle">vehicle</a> requires one or several <a href="#define-crafting">Crafting</a> rolls. One roll can be made per <a href="#define-time">shift</a>. Only one person can roll to repair, but others can <a href="#define-help">help</a>. Each success removes one point of <a href="#define-damage">damage</a>. If the vehicle was <a href="#define-vehicle-damage">wrecked</a>, it is no longer considered wrecked once one point of damage has been repaired.</p>
 			<dl>
 				<dt>Component Damage</dt>
 				<dd>If the engine or a mounted weapon has been disabled due to a critical hit, repairing it typically requires a <a href="#define-crafting">Crafting</a> roll, in addition to any roll for repairing hull damage. The work takes one <a href="#define-time">shift</a>.</dd>
@@ -4410,7 +4434,7 @@
 				<li><strong>Range:</strong> <a href="#define-range">Medium</a></li>
 				<li><strong>Duration:</strong> <a href="#define-time">Shift</a></li>
 			</ul>
-			<p>The victim must make an <a href="#define-insight">Insight</a> roll with a negative <a href="#define-modifier">modifier</a> equal to the power level. If the roll fails, the symbol blinds the victim. The effect of this blindness is the same as for being in total <a href="#define-darkness">darkness</a>. On victims without <a href="#define-attribute">Wits</a>, such as animals, the effect is automatic, but the spell has no effect on monsters.</p>
+			<p>The victim must make an <a href="#define-insight">Insight</a> roll with a negative <a href="#define-modifier">modifier</a> equal to the power level. If the roll fails, the symbol blinds the victim. The effect of this blindness is the same as for being in total <a href="#define-zone-feature">darkness</a>. On victims without <a href="#define-attribute">Wits</a>, such as animals, the effect is automatic, but the spell has no effect on monsters.</p>
 		</div>
 	</div>
 	<div class="col-12 col-md-6">
@@ -4674,7 +4698,7 @@
 						</tr>
 						<tr>
 							<th class="fw-normal og-nowrap" scope="row"><a href="#define-make-camp">Making Camp</a></th>
-							<td>Only one character can roll for making camp, but others can help.</td>
+							<td>Only one character can roll for making camp, but others can <a href="#define-help">help</a>.</td>
 						</tr>
 						<tr>
 							<th class="fw-normal og-nowrap" scope="row"><a href="#define-cook">Cooking</a></th>
@@ -4769,7 +4793,7 @@
 						<tr>
 							<th class="fw-normal" scope="row"> 6</th>
 							<td>Bogged Down</td>
-							<td>The <a href="#define-vehicle">vehicle</a> gets stuck and moves no further this <a href="#define-time">shift</a>. Getting loose requires a <a href="#define-force">Force</a> roll or help from another vehicle. One attempt per shift can be made.</td>
+							<td>The <a href="#define-vehicle">vehicle</a> gets stuck and moves no further this <a href="#define-time">shift</a>. Getting loose requires a <a href="#define-force">Force</a> roll or <a href="#define-help">help</a> from another vehicle. One attempt per shift can be made.</td>
 						<tr>
 							<th class="fw-normal" scope="row"> 7</th>
 							<td>Wrong Turn</td>
@@ -4816,7 +4840,7 @@
 			<p class="og-ref">Page 43, Page 44</p>
 			<p>If you are running out of provisions, you can spend a <a href="#define-time">shift</a> looking for edible plants or drinkable water in your current hex. To forage, first choose whether you are looking for food or water. Then make a <a href="#define-survival">Survival</a> roll, modified by the <a href="#define-travel">terrain</a> type.</p>
 			<p>When foraging for food, success means that you find a number of rations of raw food equal to the number of successes you rolled. You can eat raw plants, but you will then need to make a <a href="#define-disease">sickness</a> roll against virulence 3 (D) to resist food poisoning.</p>
-			<p>Only one character can forage for food or water in the same hex during the same shift, but others can help the roll. For each shift you forage again in the same hex, you get a &minus;1 cumulative <a href="#define-modifier">modifier</a>. This <a href="#define-modifier">modifier</a> is reset after a week, except in wintertime.</p>
+			<p>Only one character can forage for food or water in the same hex during the same shift, but others can <a href="#define-help">help</a> the roll. For each shift you forage again in the same hex, you get a &minus;1 cumulative <a href="#define-modifier">modifier</a>. This <a href="#define-modifier">modifier</a> is reset after a week, except in wintertime.</p>
 		</div>
 	</div>
 	<div class="col-12 col-md-6">
@@ -4826,7 +4850,7 @@
 			<p>Another way to find food during a journey is to hunt in your current hex. First roll for <a href="#define-survival">Survival</a>, modified for the <a href="#define-travel">terrain</a> type. Success means that you have tracked some kind of prey. Roll on a hunting table based on the game setting to see what type of animal it is. If you roll multiple successes, you manage to track several prey&mdash;roll once for each, and then choose which one to hunt.</p>
 			<p>To kill a prey you have tracked, you must first make an <a href="#define-observation">Observation</a> roll to move into position without alerting the animal. Second, you must make a <a href="#define-ranged-combat">ranged</a> attack against the animal. If your attack inflicts <a href="#define-damage">damage</a> equal to or in excess of the <a href="#define-health-resolve">Health</a> rating of the animal, or if you score a critical hit, the animal is killed. If not, it's only wounded and escapes. You usually only get one shot.</p>
 			<p>The hunting table indicates how many rations of (domestic) food that your prey yields, once the meat has been cut and <a href="#define-cook">cooked</a>. You can eat raw meat, but you will then need to make a <a href="#define-disease">sickness</a> roll against virulence 6 (C) to resist food poisoning.</p>
-			<p>Only one character can roll for hunting in the same hex during the same <a href="#define-time">shift</a>, but others can help the roll. For each shift you hunt again in the same hex, you get a &minus;1 cumulative <a href="#define-modifier">modifier</a>. This <a href="#define-modifier">modifier</a> is reset after a week.</p>
+			<p>Only one character can roll for hunting in the same hex during the same <a href="#define-time">shift</a>, but others can <a href="#define-help">help</a> the roll. For each shift you hunt again in the same hex, you get a &minus;1 cumulative <a href="#define-modifier">modifier</a>. This <a href="#define-modifier">modifier</a> is reset after a week.</p>
 			<dl>
 				<dt>Trapping</dt>
 				<dd>Certain animals can be caught using simple snares. Using a snare, you don't need to shoot the animal in order to catch it. Instead, you just make another <a href="#define-survival">Survival</a> roll after having tracked the animal&mdash;if successful, the animal is caught.</dd>
@@ -4898,12 +4922,12 @@
 			<h5 id="fishing">Fishing<a class="og-h-anchor" href="#fishing" title="Permalink" aria-hidden="true"></a></h5>
 			<p class="og-ref">Page 44</p>
 			<p>If you are in a hexagon next to a river, lake, or ocean, you can fish. You can fish from a moving boat. To fish, you need fishing <a href="#define-gear">gear</a> and a <a href="#define-survival">Survival</a> roll. Success means you gain a number of rations of (domestic) food equal to the number of you rolled, once the fish has been cleaned out and <a href="#define-cook">cooked</a>. You can eat raw fish, but you will then need to make a <a href="#define-disease">sickness</a> roll against virulence 6 (C) to resist food poisoning.</p>
-			<p>Only one character can roll for fishing in the same hex during the same <a href="#define-time">shift</a>, but others can help the roll. For each shift you fish again in the same hex, you get a &minus;1 cumulative <a href="#define-modifier">modifier</a>. This <a href="#define-modifier">modifier</a> is reset after a day.</p>
+			<p>Only one character can roll for fishing in the same hex during the same <a href="#define-time">shift</a>, but others can <a href="#define-help">help</a> the roll. For each shift you fish again in the same hex, you get a &minus;1 cumulative <a href="#define-modifier">modifier</a>. This <a href="#define-modifier">modifier</a> is reset after a day.</p>
 		</div>
 		<div id="define-make-camp">
 			<h5 id="making-camp">Making Camp<a class="og-h-anchor" href="#making-camp" title="Permalink" aria-hidden="true"></a></h5>
 			<p class="og-ref">Page 44</p>
-			<p>When the journey of the day is over, it's time to make camp. Finding a good location for a camp, making a fire, and preparing a place to <a href="#define-sleep">sleep</a> takes a whole <a href="#define-time">shift</a>&mdash;usually the evening. Only one character rolls to make camp, but others can help with the roll.</p>
+			<p>When the journey of the day is over, it's time to make camp. Finding a good location for a camp, making a fire, and preparing a place to <a href="#define-sleep">sleep</a> takes a whole <a href="#define-time">shift</a>&mdash;usually the evening. Only one character rolls to make camp, but others can <a href="#define-help">help</a> with the roll.</p>
 			<p>Make a <a href="#define-survival">Survival</a> roll. If your roll succeeds, you find a sheltered place to spend the night, where you can all find <a href="#define-cover">cover</a> from incoming fire and rest up before the next day's journey. If your roll fails, you set up camp to rest and sleep anyway, but the GM makes a hidden roll on the <a href="#define-make-camp-mishaps">camp mishap table</a>. Re-roll if the mishap is not applicable to the situation. The GM can spring this mishap on you anytime while you are in the camp.</p>
 			<dl>
 				<dt>Fire</dt>
@@ -4998,8 +5022,9 @@
 
 <!-- footer -->
 <div class="text-center pt-3 pb-3">
-	<p>Copyright &copy; 2025</p>
-	<p><a href="mailto:partario.flynn@gmail.com">partario.flynn@gmail.com</a></p>
+	<p>Not associated with, endorsed by, or sponsored by <a href="https://freeleaguepublishing.com/">Free League Publishing</a>.</p>
+	<p>Published under the <a href="https://freeleaguepublishing.com/community-content/free-tabletop-licenses/">Year Zero Engine Free Tabletop License</a>.</p>
+	<p>Copyright &copy; 2025 <a href="mailto:partario.flynn@gmail.com">partario.flynn@gmail.com</a></p>
 </div>
 <!--close-->
 </main>

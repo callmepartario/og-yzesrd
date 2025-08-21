@@ -289,7 +289,14 @@ h6, .h6 {
 	border-bottom: 0.1rem solid #164;
 }
 
-thead, dt { text-transform: uppercase;}
+thead, dt { 
+	font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+thead { line-height: 1rem; }
+
+dt { font-size: 1.25rem; }
 
 ul.og-list-diamond { 
 	list-style-type: none;
@@ -322,11 +329,11 @@ h6 a.og-h-anchor,
 	background-position: center bottom;
 	background-repeat: no-repeat;
 }
-h2 a.og-h-anchor { margin-top: 1.00rem; }
-h3 a.og-h-anchor { margin-top: 0.65rem; }
-h4 a.og-h-anchor { margin-top: 0.45rem; }
-h5 a.og-h-anchor { margin-top: 0.25rem; }
-h6 a.og-h-anchor, .h6 a.og-h-anchor { margin-top: 0.15rem; }
+h2 a.og-h-anchor { margin-top: 1.0rem; }
+h3 a.og-h-anchor { margin-top: 1rem; }
+h4 a.og-h-anchor { margin-top: 0.65rem; }
+h5 a.og-h-anchor { margin-top: 0.35rem; }
+h6 a.og-h-anchor, .h6 a.og-h-anchor { margin-top: 0.25rem; }
 
 /* anchor link iconography - color */
 .theme-light h2 a.og-h-anchor,
@@ -420,22 +427,26 @@ h6 a.og-h-anchor, .h6 a.og-h-anchor { margin-top: 0.15rem; }
 .tooltip-inner {
 	max-width: 500px;
 	text-align: left;
-	padding: 0.5rem 1rem 0 1rem;
+	padding: 0.5rem 1rem 0.5rem 1rem;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 	font-size: 80%;
 }
 .tooltip-inner h3, 
 .tooltip-inner h4, 
-.tooltip-inner h5, 
-.tooltip-inner h6, 
-.tooltip-inner .h6 { 
+.tooltip-inner h5 { 
 	font-weight: 700;
-	font-size: 1.25rem; 
+	font-size: 1.5rem; 
 }
 
 .tooltip-inner h6, 
-.tooltip-inner .h6 { 
-	font-size: 1rem; 
+.tooltip-inner .h6,
+.tooltip-inner dt { 
+	font-size: 0.9rem; 
+}
+
+.tooltip-inner p {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
 }
 
 .tooltip-inner .og-h-anchor { display: none !important }
@@ -448,7 +459,7 @@ body.theme-light .tooltip-inner {
 body.theme-dark .tooltip-inner {
 	color: #fff !important;
 	border: 0.15rem solid #164;
-	background-color: #1c1f21;
+	background-color: hsl(204, 8%, 10%);
 }
 
 body.theme-light .tooltip-inner a { color: #cf4a0c !important; text-decoration: none !important; }
