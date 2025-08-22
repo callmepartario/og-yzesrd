@@ -103,7 +103,7 @@
 	<img class="og-fig-md mt-2 mb-2 d-dark" src="images/yze-white.webp" alt="Year Zero Engine">
 	<span class="og-subtitle">Standard Reference Document</span>
 </h1>
-<p class="small text-center">version 0.15f (2025-08-21)</p>
+<p class="small text-center">version 0.15g (2025-08-21)</p>
 <ul class="list-inline text-center">
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://freeleaguepublishing.com/">Free League Publishing Official</a></li>
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://github.com/callmepartario/og-yzesrd">Github</a></li>
@@ -664,7 +664,7 @@
 			<p>Roll for Stealth when trying to sneak past someone, staying undetected, or picking someone's pocket. If your opponent is actively looking for you, it's an <a href="#define-opposed-roll">opposed roll</a> against their <a href="#define-observation">Observation</a>. If not, it's just a straight <a href="#define-skill-roll">skill roll</a>. Each of the following external factors gives you a +1 <a href="#define-modifier">modifier</a> to the roll:</p>
 			<ul class="og-list-diamond">
 				<li>You blend into your surroundings.</li>
-				<li>The area is <a href="#define-zone-feature">dark</a> or <a href="#define-zone-feature">dimly lit</a>.</li>
+				<li>The area is <a href="#define-zone">dark</a> or <a href="#define-zone">dimly lit</a>.</li>
 				<li>The area is crowded or noisy.</li>
 				<li>Your opponent is distracted by something.</li>
 			</ul>
@@ -1353,14 +1353,10 @@
 	<div class="col-12 col-md-6">
 		<div id="define-zone">
 			<h4 id="maps-and-zones">Maps &amp; Zones<a class="og-h-anchor" href="#maps-and-zones" title="Permalink" aria-hidden="true"></a></h4>
-			<p class="og-ref">Page 15</p>
-			<p>A violent conflict is typically played out using a map of the location where your characters happen to find themselves fighting for their lives.</p>
-			<p>The map is divided into zones. A zone is typically a room, a corridor, or an area of ground. How big a zone is varies&mdash;from a few steps across up to about 25 meters. A zone is generally smaller in a <a href="#define-zone-feature">cramped</a> environment than in open <a href="#define-terrain">terrain</a>.</p>
-			<p>In pre-made scenario material, zones are usually indicated on a location map. In random encounters created on the fly, the GM can make a quick sketch of the area or simply describe it.</p>
-		</div>
-		<div id="define-zone-feature">
-			<h5 id="zone-features">Zone Features<a class="og-h-anchor" href="#zone-features" title="Permalink" aria-hidden="true"></a></h5>
 			<p class="og-ref">Page 15, Page 24</p>
+			<p>A violent conflict is typically played out using a map of the location where your characters happen to find themselves fighting for their lives.</p>
+			<p>The map is divided into zones. A zone is typically a room, a corridor, or an area of ground. How big a zone is varies&mdash;from a few steps across up to about 25 meters. A zone is generally smaller in a <a href="#define-zone">cramped</a> environment than in open <a href="#define-terrain">terrain</a>.</p>
+			<p>In pre-made scenario material, zones are usually indicated on a location map. In random encounters created on the fly, the GM can make a quick sketch of the area or simply describe it.</p>
 			<p>Zones can have various features, which affect actions performed within them. Here are some examples:</p>
 			<dl>
 				<dt>Cluttered</dt>
@@ -1541,7 +1537,7 @@
 					<tr>
 						<th class="fw-normal" scope="row">Run</th>
 						<td>No <a href="#define-range">Engaged</a> enemy</td>
-						<td><a href="#define-mobility">Mobility</a> (in <a href="#define-zone-feature">cluttered</a> <a href="#define-zone">zone</a>)</td>
+						<td><a href="#define-mobility">Mobility</a> (in <a href="#define-zone">cluttered</a> <a href="#define-zone">zone</a>)</td>
 					</tr>
 					<tr>
 						<th class="fw-normal" scope="row">Move through door/hatch</th>
@@ -1617,10 +1613,10 @@
 <div id="define-move">
 	<h4 id="movement">Movement<a class="og-h-anchor" href="#movement" title="Permalink" aria-hidden="true"></a></h4>
 	<p class="og-ref">Page 17</p>
-	<p>To move during combat, you can spend a <a href="#define-action">fast action</a> to move from one <a href="#define-zone">zone</a> to a neighboring zone or between <a href="#define-range">Short</a> and <a href="#define-range">Engaged range</a> from an enemy or PC in the same zone you are already in. No roll is required to move, unless it's into a <a href="#define-zone-feature">cluttered</a> zone.</p>
+	<p>To move during combat, you can spend a <a href="#define-action">fast action</a> to move from one <a href="#define-zone">zone</a> to a neighboring zone or between <a href="#define-range">Short</a> and <a href="#define-range">Engaged range</a> from an enemy or PC in the same zone you are already in. No roll is required to move, unless it's into a <a href="#define-zone">cluttered</a> zone.</p>
 	<dl>
 		<dt>Crawling</dt>
-		<dd>Moving while prone, <em>i.e.</em>, crawling, is a <a href="#define-action">slow action</a>. That means you can't crawl twice in the same <a href="#define-time">round</a>. In a <a href="#define-zone-feature">cramped</a> <a href="#define-zone">zone</a>, crawling is the only movement possible.</dd>
+		<dd>Moving while prone, <em>i.e.</em>, crawling, is a <a href="#define-action">slow action</a>. That means you can't crawl twice in the same <a href="#define-time">round</a>. In a <a href="#define-zone">cramped</a> <a href="#define-zone">zone</a>, crawling is the only movement possible.</dd>
 		<dt>Close Combat</dt>
 		<dd>If you have an active enemy at <a href="#define-range">Engaged range</a>, you can't just walk away from <a href="#define-close-combat">close combat</a>. Instead, you must retreat.</dd>
 		<dt>Doors &amp; Hatches</dt>
@@ -1753,7 +1749,7 @@
 				<dt>Target Size</dt>
 				<dd>Firing at a large target, such as a <a href="#define-vehicle">vehicle</a>, gives a +2 <a href="#define-modifier">modifier</a> to the attack. Firing at a small object, such a hatch or a hand-held item, gives a &minus;2 <a href="#define-modifier">modifier</a>.</dd>
 				<dt>Unseen Target</dt>
-				<dd>If you can't see your target (because of <a href="#define-zone-feature">darkness</a> or <a href="#define-cover">cover</a>) but still have a good idea of where they are, you can still fire, but with a &minus;2 <a href="#define-modifier">modifier</a>.</dd>
+				<dd>If you can't see your target (because of <a href="#define-zone">darkness</a> or <a href="#define-cover">cover</a>) but still have a good idea of where they are, you can still fire, but with a &minus;2 <a href="#define-modifier">modifier</a>.</dd>
 			</dl>
 		</div>
 		<div id="define-aim">
@@ -1854,11 +1850,11 @@
 							<td>&minus;2</td>
 						</tr>
 						<tr>
-							<th class="fw-normal" scope="row"><a href="#define-zone-feature">Dim light</a></th>
+							<th class="fw-normal" scope="row"><a href="#define-zone">Dim light</a></th>
 							<td>&minus;1</td>
 						</tr>
 						<tr>
-							<th class="fw-normal" scope="row"><a href="#define-zone-feature">Darkness</a></th>
+							<th class="fw-normal" scope="row"><a href="#define-zone">Darkness</a></th>
 							<td>&minus;2</td>
 						</tr>
 					</tbody>
@@ -2747,7 +2743,7 @@
 		<li class="list-inline-item pe-3"><a href="#define-sleep-deprivation">Sleep Deprivation</a></li>
 		<li class="list-inline-item pe-3"><a href="#define-starvation">Starvation</a></li>
 	</ul>
-	<p>For dim light and darkness, see <a href="#define-zone-feature">Zone Features</a>.</p>
+	<p>For dim light and darkness, see <a href="#define-zone">Zone Features</a>.</p>
 </div>
 <div class="row">
 	<div class="col-12 col-md-6">
@@ -2872,7 +2868,7 @@
 			<p>A horse or other riding animal can be a useful asset. The animal can carry <a href="#define-gear">gear</a> for you, and you can take advantage of being in the saddle during combat.</p>
 			<dl>
 				<dt>Movement</dt>
-				<dd>Mounts allow you to move faster in combat than on foot. When making a <a href="#define-move">move action</a>, make a <a href="#define-mobility">Mobility</a> roll&mdash;for each success, you may move an additional <a href="#define-zone">zone</a>. Mounts generally can't move into <a href="#define-zone-feature">cramped</a> zones at all. In <a href="#define-zone-feature">cluttered</a> zones, they can only move one zone per action.</dd>
+				<dd>Mounts allow you to move faster in combat than on foot. When making a <a href="#define-move">move action</a>, make a <a href="#define-mobility">Mobility</a> roll&mdash;for each success, you may move an additional <a href="#define-zone">zone</a>. Mounts generally can't move into <a href="#define-zone">cramped</a> zones at all. In <a href="#define-zone">cluttered</a> zones, they can only move one zone per action.</dd>
 				<dt>Move</dt>
 				<dd>When you are on horseback and make a <a href="#define-mobility">Mobility</a> roll, use the animal's <a href="#define-attribute">Agility</a> instead of your own.</dd>
 				<dt>Close Combat</dt>
@@ -4481,7 +4477,7 @@
 				<li><strong>Range:</strong> <a href="#define-range">Medium</a></li>
 				<li><strong>Duration:</strong> <a href="#define-time">Shift</a></li>
 			</ul>
-			<p>The victim must make an <a href="#define-insight">Insight</a> roll with a negative <a href="#define-modifier">modifier</a> equal to the power level. If the roll fails, the symbol blinds the victim. The effect of this blindness is the same as for being in total <a href="#define-zone-feature">darkness</a>. On victims without <a href="#define-attribute">Wits</a>, such as animals, the effect is automatic, but the spell has no effect on monsters.</p>
+			<p>The victim must make an <a href="#define-insight">Insight</a> roll with a negative <a href="#define-modifier">modifier</a> equal to the power level. If the roll fails, the symbol blinds the victim. The effect of this blindness is the same as for being in total <a href="#define-zone">darkness</a>. On victims without <a href="#define-attribute">Wits</a>, such as animals, the effect is automatic, but the spell has no effect on monsters.</p>
 		</div>
 	</div>
 	<div class="col-12 col-md-6">
